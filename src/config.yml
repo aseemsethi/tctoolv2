@@ -1,0 +1,9 @@
+# Server configurations
+target:
+  region: "us-east-1"
+  id: "329914591859"
+
+# Database credentials
+database:
+  user: "admin"
+  pass: "super-pedro-1980"
