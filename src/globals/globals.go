@@ -50,7 +50,7 @@ func parseYaml(tcg *TcGlobals) {
 	}
 	fmt.Println("Config: ", Config)
 	tcg.Log.WithFields(logrus.Fields{
-		"Test": "Globals"}).Info("Config: ", Config)
+		"Test": "Globals", "Config": Config}).Info("Config:")
 }
 
 func (tcg *TcGlobals) Initialize() bool {
@@ -61,7 +61,7 @@ func (tcg *TcGlobals) Initialize() bool {
 	}
 	//defer file.Close()
 	tcg.Log.SetOutput(file)
-	tcg.Log.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true})
+	tcg.Log.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true, DisableTimestamp: true})
 	tcg.Log.SetLevel(logrus.InfoLevel)
 
 	sess, err := session.NewSessionWithOptions(session.Options{
