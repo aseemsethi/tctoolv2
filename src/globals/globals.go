@@ -24,6 +24,9 @@ type TcConfig struct {
 		Region string `yaml:"region"`
 		Id     string `yaml:"id"`
 	} `yaml:"target"`
+	Email struct {
+		Id string `yaml:"id"`
+	}
 	Database struct {
 		Username string `yaml:"user"`
 		Password string `yaml:"pass"`
@@ -46,9 +49,21 @@ func parseYaml(tcg *TcGlobals) {
 		fmt.Println("Yaml decode error", err)
 	}
 	fmt.Println("Config: ", Config)
+	tcg.Log.WithFields(logrus.Fields{
+		"Test": "Globals"}).Info("Config: ", Config)
 }
 
 func (tcg *TcGlobals) Initialize() bool {
+	tcg.Log = logrus.New()
+	file, err := os.OpenFile("logs/tctool.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		tcg.Log.Fatal(err)
+	}
+	//defer file.Close()
+	tcg.Log.SetOutput(file)
+	tcg.Log.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true})
+	tcg.Log.SetLevel(logrus.InfoLevel)
+
 	sess, err := session.NewSessionWithOptions(session.Options{
 		Profile:           "default",
 		SharedConfigState: session.SharedConfigEnable,
@@ -67,15 +82,6 @@ func (tcg *TcGlobals) Initialize() bool {
 	tcg.GConf = aws.Config{Region: aws.String(tcg.GRegion)}
 	tcg.GConf.Credentials = stscreds.NewCredentials(tcg.Sess, tcg.GArn, func(p *stscreds.AssumeRoleProvider) {})
 
-	tcg.Log = logrus.New()
-	file, err := os.OpenFile("logs/tctool.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
-	if err != nil {
-		tcg.Log.Fatal(err)
-	}
-	//defer file.Close()
-	tcg.Log.SetOutput(file)
-	tcg.Log.SetFormatter(&logrus.JSONFormatter{})
-	tcg.Log.SetLevel(logrus.InfoLevel)
 	tcg.Log.WithFields(logrus.Fields{
 		"Test": "Globals"}).Info("**************************Globals Initialized...")
 	return true

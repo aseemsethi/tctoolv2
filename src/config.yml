@@ -3,6 +3,10 @@ target:
   region: "us-east-1"
   id: "329914591859"
 
+# Email notifications
+email:
+  id: "aseemsethi@yahoo.com"
+
 # Database credentials
 database:
   user: "admin"

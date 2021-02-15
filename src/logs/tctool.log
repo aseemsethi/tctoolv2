@@ -6,3 +6,24 @@
 {"Test":"Init","level":"info","msg":"Security Tests Starting.....................................................","time":"2021-02-14T01:36:09Z"}
 {"Test":"Globals","level":"info","msg":"**************************Globals Initialized...","time":"2021-02-14T01:40:19Z"}
 {"Test":"Init","level":"info","msg":"Security Tests Starting.....................................................","time":"2021-02-14T01:40:19Z"}
+{"Test":"Globals","level":"info","msg":"Config: {{us-east-1 329914591859} {aseemsethi@yahoo.com} {admin super-pedro-1980}}","time":"2021-02-15T06:37:59Z"}
+{"Test":"Globals","level":"info","msg":"**************************Globals Initialized...","time":"2021-02-15T06:37:59Z"}
+{"Test":"Init","level":"info","msg":"Security Tests Starting.....................................................","time":"2021-02-15T06:37:59Z"}
+{
+  "Test": "Globals",
+  "level": "info",
+  "msg": "Config: {{us-east-1 329914591859} {aseemsethi@yahoo.com} {admin super-pedro-1980}}",
+  "time": "2021-02-15T07:54:55Z"
+}
+{
+  "Test": "Globals",
+  "level": "info",
+  "msg": "**************************Globals Initialized...",
+  "time": "2021-02-15T07:54:55Z"
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Security Tests Starting.....................................................",
+  "time": "2021-02-15T07:54:55Z"
+}
