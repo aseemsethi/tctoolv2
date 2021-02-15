@@ -5,7 +5,9 @@ target:
 
 # Email notifications
 email:
-  id: "aseemsethi@yahoo.com"
+  recv: "aseemsethi@yahoo.com"
+  sender: "aseemsethi@yahoo.com"
+  subject: "TcTool Test Results"
 
 # Database credentials
 database:

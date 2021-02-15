@@ -5,7 +5,9 @@
       "Id": "329914591859"
     },
     "Email": {
-      "Id": "aseemsethi@yahoo.com"
+      "Sender": "aseemsethi@yahoo.com",
+      "Recv": "aseemsethi@yahoo.com",
+      "Subject": "TcTool Test Results"
     },
     "Database": {
       "Username": "admin",
@@ -25,4 +27,9 @@
   "Test": "Init",
   "level": "info",
   "msg": "Security Tests Starting....................................................."
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Email sent:aseemsethi@yahoo.com"
 }

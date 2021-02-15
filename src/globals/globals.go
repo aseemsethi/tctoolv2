@@ -25,7 +25,9 @@ type TcConfig struct {
 		Id     string `yaml:"id"`
 	} `yaml:"target"`
 	Email struct {
-		Id string `yaml:"id"`
+		Sender  string `yaml:"sender"`
+		Recv    string `yaml:"recv"`
+		Subject string `yaml:"subject"`
 	}
 	Database struct {
 		Username string `yaml:"user"`
@@ -48,7 +50,6 @@ func parseYaml(tcg *TcGlobals) {
 	if err != nil {
 		fmt.Println("Yaml decode error", err)
 	}
-	fmt.Println("Config: ", Config)
 	tcg.Log.WithFields(logrus.Fields{
 		"Test": "Globals", "Config": Config}).Info("Config:")
 }
