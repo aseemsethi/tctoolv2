@@ -38,6 +38,14 @@ type TcConfig struct {
 
 var Globals = TcGlobals{Name: "Test Globals"}
 
+type tcRun func(*TcGlobals) (bool, error)
+
+type Tcs struct {
+	Id    string
+	Descr string
+	Run   tcRun
+}
+
 func parseYaml(tcg *TcGlobals) {
 	f, err := os.Open("config.yml")
 	if err != nil {
