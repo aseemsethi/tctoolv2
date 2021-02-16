@@ -17,6 +17,7 @@ type TcGlobals struct {
 	GRegion string
 	GArn    string
 	GConf   aws.Config
+	Config  TcConfig
 }
 
 type TcConfig struct {
@@ -36,7 +37,6 @@ type TcConfig struct {
 }
 
 var Globals = TcGlobals{Name: "Test Globals"}
-var Config TcConfig
 
 func parseYaml(tcg *TcGlobals) {
 	f, err := os.Open("config.yml")
@@ -46,12 +46,12 @@ func parseYaml(tcg *TcGlobals) {
 	defer f.Close()
 
 	decoder := yaml.NewDecoder(f)
-	err = decoder.Decode(&Config)
+	err = decoder.Decode(&tcg.Config)
 	if err != nil {
 		fmt.Println("Yaml decode error", err)
 	}
 	tcg.Log.WithFields(logrus.Fields{
-		"Test": "Globals", "Config": Config}).Info("Config:")
+		"Test": "Globals", "Config": tcg.Config}).Info("Config:")
 }
 
 func (tcg *TcGlobals) Initialize() bool {
@@ -78,8 +78,8 @@ func (tcg *TcGlobals) Initialize() bool {
 
 	parseYaml(tcg)
 
-	tcg.GRegion = Config.Target.Region
-	tcg.GArn = fmt.Sprintf("arn:aws:iam::%v:role/KVAccess", Config.Target.Id)
+	tcg.GRegion = tcg.Config.Target.Region
+	tcg.GArn = fmt.Sprintf("arn:aws:iam::%v:role/KVAccess", tcg.Config.Target.Id)
 	tcg.GConf = aws.Config{Region: aws.String(tcg.GRegion)}
 	tcg.GConf.Credentials = stscreds.NewCredentials(tcg.Sess, tcg.GArn, func(p *stscreds.AssumeRoleProvider) {})
 

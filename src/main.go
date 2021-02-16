@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/aseemsethi/tctoolv2/src/execTests"
 	"github.com/aseemsethi/tctoolv2/src/globals"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -12,7 +13,8 @@ import (
 
 var mLog *logrus.Logger
 
-func sendEmail(config *globals.TcConfig, globals *globals.TcGlobals) {
+func sendEmail(globals *globals.TcGlobals) {
+	config := globals.Config
 	CharSet := "UTF-8"
 	//TextBody := "Hi, this is email from Aseem Sethi"
 	b, err := ioutil.ReadFile("logs/tctool.log")
@@ -94,5 +96,6 @@ func main() {
 	mLog = globals.Globals.Log
 	mLog.WithFields(logrus.Fields{
 		"Test": "Init"}).Info("Security Tests Starting.....................................................")
-	sendEmail(&globals.Config, &globals.Globals)
+	execTests.ExecTests(&globals.Globals)
+	//sendEmail(&globals.Globals)
 }

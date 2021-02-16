@@ -29,7 +29,7 @@
   "msg": "Security Tests Starting....................................................."
 }
 {
-  "Test": "Init",
+  "Test": "Exec",
   "level": "info",
-  "msg": "Email sent:aseemsethi@yahoo.com"
+  "msg": "execTests: started"
 }
