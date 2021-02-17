@@ -34,6 +34,16 @@
   "msg": "execTests: started"
 }
 {
+  "Test": "CIS",
+  "level": "info",
+  "msg": "CredentialReport init..."
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "Credential Rept generated"
+}
+{
   "Summary": {
     "critical": 1,
     "high": 0,

@@ -8,7 +8,6 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/aws/aws-sdk-go/service/iam/iamiface"
 	"github.com/sirupsen/logrus"
 	"io"
 	"log"
@@ -17,27 +16,46 @@ import (
 	"time"
 )
 
+const (
+	crUser                      = iota
+	crArn                       = iota
+	crUserCreationTime          = iota
+	crPasswordEnabled           = iota
+	crPasswordLastUsed          = iota
+	crPasswordLastChanged       = iota
+	crPasswordNextRotation      = iota
+	crMfaActive                 = iota
+	crAccessKey1Active          = iota
+	crAccessKey1LastRotated     = iota
+	crAccessKey1LastUsedDate    = iota
+	crAccessKey1LastUsedRegion  = iota
+	crAccessKey1LastUsedService = iota
+	crAccessKey2Active          = iota
+	crAccessKey2LastRotated     = iota
+	crAccessKey2LastUsedDate    = iota
+	crAccessKey2LastUsedRegion  = iota
+	crAccessKey2LastUsedService = iota
+	crCert1Active               = iota
+	crCert1LastRotated          = iota
+	crCert2Active               = iota
+	crCert2LastRotated          = iota
+)
+
 type CredentialReport struct {
-	Name       string
-	Cred       string
-	svc        iamiface.IAMAPI
-	CredReport credentialReport
+	Name string
 }
 
 var Access_Key_1_Last_Used_Date = 10
 var Access_Key_2_Last_Used_Date = 15
 var iLog *logrus.Logger
 
-func (i *CredentialReport) Initialize() bool {
+func CredentialsInitialize(g *globals.TcGlobals) (bool, error) {
 	firstimte := false
 	iLog = globals.Globals.Log
 	iLog.WithFields(logrus.Fields{
 		"Test": "CIS"}).Info("CredentialReport init...")
 
-	// Create a IAM service client.
-	svc := iam.New(globals.Globals.Sess, &globals.Globals.GConf)
-	i.svc = svc
-	resp, err := svc.GenerateCredentialReport(&iam.GenerateCredentialReportInput{})
+	resp, err := globals.Globals.IamSvc.GenerateCredentialReport(&iam.GenerateCredentialReportInput{})
 	if err != nil {
 		iLog.WithFields(logrus.Fields{
 			"Test": "CIS"}).Info("GenerateCredentialReport Failed: ", err.Error())
@@ -45,7 +63,7 @@ func (i *CredentialReport) Initialize() bool {
 start:
 	if *resp.State == "COMPLETE" {
 		//fmt.Printf("\nCredentialReport GetCredRept..")
-		resp, get_err := svc.GetCredentialReport(&iam.GetCredentialReportInput{})
+		resp, get_err := globals.Globals.IamSvc.GetCredentialReport(&iam.GetCredentialReportInput{})
 		if get_err != nil {
 			if aerr, ok := err.(awserr.Error); ok {
 				switch aerr.Code() {
@@ -66,21 +84,21 @@ start:
 		}
 
 		//fmt.Println("\n", string(resp.Content))
-		i.Cred = string(resp.Content)
+		globals.Globals.Cred = string(resp.Content)
 		iLog.WithFields(logrus.Fields{
 			"Test": "CIS"}).Info("Credential Rept generated")
-		return true
+		return true, nil
 	} else {
 		iLog.WithFields(logrus.Fields{
 			"Test": "CIS"}).Info("Credential Rept Not generated")
 		if firstimte == false {
 			firstimte = true
 			time.Sleep(10 * time.Second)
-			resp, err = svc.GenerateCredentialReport(&iam.GenerateCredentialReportInput{})
+			resp, err = globals.Globals.IamSvc.GenerateCredentialReport(&iam.GenerateCredentialReportInput{})
 			if err != nil {
 				iLog.WithFields(logrus.Fields{
 					"Test": "CIS"}).Info("GenerateCredentialReport Failed 2nd time...exiting: : ", err.Error())
-				return false
+				return false, err
 			} else {
 				iLog.WithFields(logrus.Fields{
 					"Test": "CIS"}).Info("GenerateCredentialReport Passed 2nd time")
@@ -88,11 +106,18 @@ start:
 			}
 		}
 	}
-	return true
+	return true, nil
+}
+
+func stringToBool(input string) (output bool) {
+	if strings.ToLower(input) == "true" {
+		output = true
+	}
+	return
 }
 
 func RootAccessKeysDisabled(i *CredentialReport) {
-	s := strings.Split(i.Cred, "\n")
+	s := strings.Split(globals.Globals.Cred, "\n")
 
 	for _, each := range s {
 		//1.1 Avoid the use of the "root" account
@@ -121,11 +146,11 @@ func RootAccessKeysDisabled(i *CredentialReport) {
 
 func ParseCredentialFile(i *CredentialReport) {
 	var err error
-	var credReportItem credentialReportItem
+	var credReportItem globals.CredentialReportItem
 
 	iLog.WithFields(logrus.Fields{
 		"Test": "CIS"}).Info("ParseCredentialFile")
-	reader := csv.NewReader(strings.NewReader(i.Cred))
+	reader := csv.NewReader(strings.NewReader(globals.Globals.Cred))
 	var readErr error
 	var record []string
 	//var credReportItem credentialReportItem
@@ -206,7 +231,7 @@ func ParseCredentialFile(i *CredentialReport) {
 			err = nil
 		}
 
-		credReportItem = credentialReportItem{
+		credReportItem = globals.CredentialReportItem{
 			Arn:                       record[crArn],
 			User:                      userName,
 			UserCreationTime:          userCreationTime,
@@ -230,14 +255,14 @@ func ParseCredentialFile(i *CredentialReport) {
 			Cert2Active:               cert2Active,
 			Cert2LastRotated:          cert2LastRotated,
 		}
-		i.CredReport = append(i.CredReport, credReportItem)
+		globals.Globals.CredReport = append(globals.Globals.CredReport, credReportItem)
 		//fmt.Printf("%+v", credReportItem)
 	}
 }
 
 func MFAEnabled(i *CredentialReport) {
 	failed := false
-	for _, elem := range i.CredReport {
+	for _, elem := range globals.Globals.CredReport {
 		//fmt.Println("Check User: ", elem.Arn)
 		if elem.MfaActive == false {
 			iLog.WithFields(logrus.Fields{
@@ -255,7 +280,7 @@ func MFAEnabled(i *CredentialReport) {
 
 func TimeLastUsedAccessKeys(i *CredentialReport) {
 	failed := false
-	for _, elem := range i.CredReport {
+	for _, elem := range globals.Globals.CredReport {
 		// If the AccessKey is never used, it will show as N/A, and a time coversion on this will yield an error
 		// At that tiem, we save null vaule in this time field
 		if elem.AccessKey1LastUsedDate.IsZero() == true {
@@ -288,7 +313,7 @@ func TimeLastUsedAccessKeys(i *CredentialReport) {
 
 func TimeLastRotatedAccessKeys(i *CredentialReport) {
 	failed := false
-	for _, elem := range i.CredReport {
+	for _, elem := range globals.Globals.CredReport {
 		// If the AccessKey is never used, it will show as N/A, and a time coversion on this will yield an error
 		// At that tiem, we save null vaule in this time field
 		if elem.AccessKey1LastRotated.IsZero() == true {
@@ -321,11 +346,11 @@ func TimeLastRotatedAccessKeys(i *CredentialReport) {
 
 func policyAttachedToUserCheck(i *CredentialReport) {
 	found := false
-	for _, cred := range i.CredReport {
+	for _, cred := range globals.Globals.CredReport {
 		iLog.WithFields(logrus.Fields{
 			"Test": "CIS", "Num": 1.16,
 		}).Info("policyAttachedToUserCheck for user: ", cred.User)
-		attachedPolicies, err := i.svc.ListAttachedUserPolicies(&iam.ListAttachedUserPoliciesInput{UserName: aws.String(cred.User)})
+		attachedPolicies, err := globals.Globals.IamSvc.ListAttachedUserPolicies(&iam.ListAttachedUserPoliciesInput{UserName: aws.String(cred.User)})
 		if err != nil {
 			if cred.User == "root" {
 				// A policy retrieval for root gives an error, so we skip root for this test. No username 'root' found
@@ -368,7 +393,7 @@ func listAllPolicies(i *CredentialReport) {
 	params := &iam.ListPoliciesInput{
 		Scope: aws.String("Local"), // only looking at non AWS policies
 	}
-	resp, err := i.svc.ListPolicies(params)
+	resp, err := globals.Globals.IamSvc.ListPolicies(params)
 	if err != nil {
 		iLog.WithFields(logrus.Fields{
 			"Test": "CIS", "Num": 1.17}).Info("Error retrieving policies: ", err)
@@ -383,7 +408,7 @@ func listAllPolicies(i *CredentialReport) {
 			PolicyArn: aws.String(*val.Arn), // Required
 			VersionId: aws.String("v2"),     // Required
 		}
-		resp1, err := i.svc.GetPolicyVersion(params1)
+		resp1, err := globals.Globals.IamSvc.GetPolicyVersion(params1)
 		if err != nil {
 			iLog.WithFields(logrus.Fields{
 				"Test": "CIS", "Num": 1.17}).Info("Error retrieving policy doc: ", err)

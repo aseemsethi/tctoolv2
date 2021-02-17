@@ -5,19 +5,24 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/iam"
+	"github.com/aws/aws-sdk-go/service/iam/iamiface"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 	"os"
 )
 
 type TcGlobals struct {
-	Name    string
-	Log     *logrus.Logger
-	Sess    *session.Session
-	GRegion string
-	GArn    string
-	GConf   aws.Config
-	Config  TcConfig
+	Name       string
+	Log        *logrus.Logger
+	Sess       *session.Session
+	GRegion    string
+	GArn       string
+	GConf      aws.Config
+	Config     TcConfig
+	IamSvc     iamiface.IAMAPI
+	Cred       string
+	CredReport credentialReport
 }
 
 type TcConfig struct {
@@ -98,6 +103,8 @@ func (tcg *TcGlobals) Initialize() bool {
 	tcg.GArn = fmt.Sprintf("arn:aws:iam::%v:role/KVAccess", tcg.Config.Target.Id)
 	tcg.GConf = aws.Config{Region: aws.String(tcg.GRegion)}
 	tcg.GConf.Credentials = stscreds.NewCredentials(tcg.Sess, tcg.GArn, func(p *stscreds.AssumeRoleProvider) {})
+
+	tcg.IamSvc = iam.New(tcg.Sess, &tcg.GConf)
 
 	tcg.Log.WithFields(logrus.Fields{
 		"Test": "Globals"}).Info("**************************Globals Initialized...")

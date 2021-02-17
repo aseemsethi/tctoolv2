@@ -10,6 +10,7 @@ import (
 var mLog *logrus.Logger
 
 var tcCases = []globals.Tcs{
+	{"CredentialsInit", "Generate Credential Repo", CredentialsInitialize},
 	{"CIS1.1", "Avoid Root Account", cis11},
 	{"CIS1.2", "Enable MFA for all Accounts", cis12},
 }
