@@ -14,11 +14,12 @@ var tcCases = []globals.Tcs{
 	{"CIS1.2", "Enable MFA for all Accounts", cis12},
 }
 
-func cis11(*globals.TcGlobals) (bool, error) {
+func cis11(g *globals.TcGlobals) (bool, error) {
 	fmt.Print("cis11 called")
+	globals.SevCount["critical"] += 1
 	return true, nil // errors.New("Test Passed")
 }
-func cis12(*globals.TcGlobals) (bool, error) {
+func cis12(g *globals.TcGlobals) (bool, error) {
 	fmt.Print("cis12 called")
 	return false, errors.New("Test Failed")
 }

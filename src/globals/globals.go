@@ -46,6 +46,14 @@ type Tcs struct {
 	Run   tcRun
 }
 
+var SevCount = map[string]int64{
+	"critical": 0,
+	"high":     0,
+	"medium":   0,
+	"low":      0,
+	"info":     0,
+}
+
 func parseYaml(tcg *TcGlobals) {
 	f, err := os.Open("config.yml")
 	if err != nil {

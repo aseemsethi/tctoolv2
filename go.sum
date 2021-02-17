@@ -1,4 +1,6 @@
 github.com/aseemsethi/tctool v0.0.0-20210211013030-d99bd15d9776 h1:DND7HjtmQuSTpBLQnLRp72+OJ97mbsIRPeLyk0+iJb4=
+github.com/aseemsethi/tctool v0.0.0-20210211013030-d99bd15d9776/go.mod h1:RtAsq64GQfIdOFgCU3TFfGino1tcaVf+s6luSxF6baQ=
+github.com/aws/aws-sdk-go v1.36.19/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.37.10 h1:LRwl+97B4D69Z7tz+eRUxJ1C7baBaIYhgrn5eLtua+Q=
 github.com/aws/aws-sdk-go v1.37.10/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

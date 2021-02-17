@@ -98,4 +98,6 @@ func main() {
 		"Test": "Init"}).Info("Security Tests Starting.....................................................")
 	execTests.ExecTests(&globals.Globals)
 	//sendEmail(&globals.Globals)
+	mLog.WithFields(logrus.Fields{
+		"Test": "Tests", "Summary": globals.SevCount}).Info("Summary")
 }
