@@ -38,7 +38,7 @@ func getComplianceDetails(g *globals.TcGlobals) {
 			}
 			g.ComplianceDetailsResult = append(g.ComplianceDetailsResult, output.EvaluationResults...)
 			//fmt.Println("Results: ", output.EvaluationResults)
-			iLog.WithFields(logrus.Fields{"Test": "Config", "Eval Results": output.EvaluationResults}).Info("getComplianceRules")
+			iLog.WithFields(logrus.Fields{"Test": "Config", "Eval Results": output.EvaluationResults}).Info("Compliance Results")
 			if output.NextToken == nil {
 				break
 			}

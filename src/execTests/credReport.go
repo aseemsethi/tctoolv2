@@ -48,10 +48,13 @@ type CredentialReport struct {
 var Access_Key_1_Last_Used_Date = 10
 var Access_Key_2_Last_Used_Date = 15
 var iLog *logrus.Logger
+var fLog *logrus.Logger
 
 func CredentialsInitialize(g *globals.TcGlobals) (bool, error) {
 	firstimte := false
 	iLog = globals.Globals.Log
+	fLog = globals.Globals.FLog
+
 	iLog.WithFields(logrus.Fields{
 		"Test": "CIS"}).Info("CredentialReport init...")
 

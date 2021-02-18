@@ -36,6 +36,17 @@
   "msg": "execTests: started"
 }
 {
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Starting *****************************************securityHub"
+}
+{
+  "Descr": "Generate securityHub Report",
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Passed"
+}
+{
   "Test": "cis",
   "level": "info",
   "msg": "Starting *****************************************cis"
@@ -2166,7 +2177,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2188,7 +2199,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2225,37 +2236,37 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2277,7 +2288,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2299,7 +2310,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2321,79 +2332,79 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2415,7 +2426,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2437,85 +2448,85 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
     {
       "Annotation": null,
       "ComplianceType": "NON_COMPLIANT",
-      "ConfigRuleInvokedTime": "2021-02-18T13:58:17.011Z",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:45.982Z",
       "EvaluationResultIdentifier": {
         "EvaluationResultQualifier": {
           "ConfigRuleName": "securityhub-ec2-imdsv2-check-d0dfacd2",
           "ResourceId": "i-097d74749bc21f77c",
           "ResourceType": "AWS::EC2::Instance"
         },
-        "OrderingTimestamp": "2021-02-18T13:58:04.618Z"
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
       },
-      "ResultRecordedTime": "2021-02-18T13:58:17.184Z",
+      "ResultRecordedTime": "2021-02-18T15:21:46.183Z",
       "ResultToken": null
     }
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
     {
       "Annotation": null,
       "ComplianceType": "NON_COMPLIANT",
-      "ConfigRuleInvokedTime": "2021-02-18T14:28:09.038Z",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:46.008Z",
       "EvaluationResultIdentifier": {
         "EvaluationResultQualifier": {
           "ConfigRuleName": "securityhub-ec2-instance-managed-by-ssm-bb9485c0",
           "ResourceId": "i-097d74749bc21f77c",
           "ResourceType": "AWS::EC2::Instance"
         },
-        "OrderingTimestamp": "2021-02-18T14:27:45Z"
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
       },
-      "ResultRecordedTime": "2021-02-18T14:28:09.565Z",
+      "ResultRecordedTime": "2021-02-18T15:21:46.51Z",
       "ResultToken": null
     }
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
     {
-      "Annotation": "This Amazon EC2 Instance uses a public IP.",
-      "ComplianceType": "NON_COMPLIANT",
-      "ConfigRuleInvokedTime": "2021-02-18T13:58:17.097Z",
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:46.043Z",
       "EvaluationResultIdentifier": {
         "EvaluationResultQualifier": {
           "ConfigRuleName": "securityhub-ec2-instance-no-public-ip-3c98fce6",
           "ResourceId": "i-097d74749bc21f77c",
           "ResourceType": "AWS::EC2::Instance"
         },
-        "OrderingTimestamp": "2021-02-18T13:58:04.618Z"
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
       },
-      "ResultRecordedTime": "2021-02-18T13:58:17.277Z",
+      "ResultRecordedTime": "2021-02-18T15:21:46.213Z",
       "ResultToken": null
     }
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2537,61 +2548,61 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2613,7 +2624,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2635,7 +2646,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2687,7 +2698,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2844,7 +2855,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2911,7 +2922,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2933,7 +2944,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2955,7 +2966,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2977,7 +2988,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -2999,7 +3010,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3021,7 +3032,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3043,7 +3054,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3065,7 +3076,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3087,7 +3098,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3139,7 +3150,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3161,7 +3172,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3183,7 +3194,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3220,7 +3231,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3257,25 +3268,25 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3312,7 +3323,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3334,91 +3345,91 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3455,7 +3466,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3492,7 +3503,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3514,7 +3525,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3536,13 +3547,13 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3579,7 +3590,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3616,7 +3627,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3653,7 +3664,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3690,7 +3701,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3727,7 +3738,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3764,25 +3775,25 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3804,7 +3815,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3826,7 +3837,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3848,7 +3859,7 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Eval Results": [
@@ -3870,22 +3881,11 @@
   ],
   "Test": "Config",
   "level": "info",
-  "msg": "getComplianceRules"
+  "msg": "Compliance Results"
 }
 {
   "Descr": "Config Run",
   "Test": "config",
-  "level": "info",
-  "msg": "Passed"
-}
-{
-  "Test": "securityHub",
-  "level": "info",
-  "msg": "Starting *****************************************securityHub"
-}
-{
-  "Descr": "Generate securityHub Report",
-  "Test": "securityHub",
   "level": "info",
   "msg": "Passed"
 }

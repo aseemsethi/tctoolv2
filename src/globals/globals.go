@@ -11,11 +11,16 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 	"os"
+	"time"
 )
 
 type TcGlobals struct {
-	Name                    string
-	Log                     *logrus.Logger
+	Name           string
+	Log            *logrus.Logger // holds all test cases
+	FLog           *logrus.Logger // holds all failed test cases
+	AllLogsFile    string
+	FailedLogsFile string
+
 	Sess                    *session.Session
 	GRegion                 string
 	GArn                    string
@@ -77,9 +82,14 @@ func parseYaml(tcg *TcGlobals) {
 		"Test": "Globals", "Config": tcg.Config}).Info("Config:")
 }
 
-func (tcg *TcGlobals) Initialize() bool {
+func initLogs(tcg *TcGlobals) {
+	//const layout = "01-02-2006"
+	const layout = "2 Jan 2006 15:04:05"
+	t := time.Now()
+
+	tcg.AllLogsFile = "logs/tctool-" + t.Format(layout) + ".log"
 	tcg.Log = logrus.New()
-	file, err := os.OpenFile("logs/tctool.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(tcg.AllLogsFile, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		tcg.Log.Fatal(err)
 	}
@@ -88,6 +98,20 @@ func (tcg *TcGlobals) Initialize() bool {
 	tcg.Log.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true, DisableTimestamp: true})
 	tcg.Log.SetLevel(logrus.InfoLevel)
 
+	tcg.FailedLogsFile = "logs/tctool-failed-" + t.Format(layout) + ".log"
+	tcg.FLog = logrus.New()
+	fileF, err := os.OpenFile(tcg.FailedLogsFile, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		tcg.FLog.Fatal(err)
+	}
+	//defer fileF.Close()
+	tcg.FLog.SetOutput(fileF)
+	tcg.FLog.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true, DisableTimestamp: true})
+	tcg.FLog.SetLevel(logrus.InfoLevel)
+}
+
+func (tcg *TcGlobals) Initialize() bool {
+	initLogs(tcg)
 	sess, err := session.NewSessionWithOptions(session.Options{
 		Profile:           "default",
 		SharedConfigState: session.SharedConfigEnable,

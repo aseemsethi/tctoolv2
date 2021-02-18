@@ -16,8 +16,7 @@ var mLog *logrus.Logger
 func sendEmail(globals *globals.TcGlobals) {
 	config := globals.Config
 	CharSet := "UTF-8"
-	//TextBody := "Hi, this is email from Aseem Sethi"
-	b, err := ioutil.ReadFile("logs/tctool.log")
+	b, err := ioutil.ReadFile(globals.FailedLogsFile) // sending Failed Test Cases
 	if err != nil {
 		fmt.Print(err)
 		return
