@@ -2,7 +2,7 @@ package execTests
 
 import (
 	//"errors"
-	"fmt"
+	//"fmt"
 	"github.com/aseemsethi/tctoolv2/src/globals"
 	"github.com/sirupsen/logrus"
 )
@@ -33,7 +33,6 @@ var securityHubTestCases = []globals.Tcs{
 }
 
 func cis11(g *globals.TcGlobals) (bool, error) {
-	fmt.Print("cis11 called")
 	globals.SevCount["critical"] += 1
 	return true, nil // errors.New("Test Passed")
 }

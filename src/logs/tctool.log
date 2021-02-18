@@ -1,0 +1,192 @@
+{
+  "Config": {
+    "Target": {
+      "Region": "us-east-1",
+      "Id": "329914591859"
+    },
+    "Email": {
+      "Sender": "aseemsethi@yahoo.com",
+      "Recv": "aseemsethi@yahoo.com",
+      "Subject": "TcTool Test Results",
+      "SendEmail": false
+    },
+    "EnabledTests": [
+      "cis",
+      "inspector",
+      "config",
+      "securityHub"
+    ]
+  },
+  "Test": "Globals",
+  "level": "info",
+  "msg": "Config:"
+}
+{
+  "Test": "Globals",
+  "level": "info",
+  "msg": "**************************Globals Initialized..."
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Security Tests Starting:  *****************************************"
+}
+{
+  "Test": "Exec",
+  "level": "info",
+  "msg": "execTests: started"
+}
+{
+  "Test": "cis",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "CredentialReport init..."
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "GenerateCredentialReport Failed: Throttling: Rate exceeded\n\tstatus code: 400, request id: 20f73778-932b-4881-be28-ba02e6b610a4"
+}
+{
+  "Config": {
+    "Target": {
+      "Region": "us-east-1",
+      "Id": "329914591859"
+    },
+    "Email": {
+      "Sender": "aseemsethi@yahoo.com",
+      "Recv": "aseemsethi@yahoo.com",
+      "Subject": "TcTool Test Results",
+      "SendEmail": false
+    },
+    "EnabledTests": [
+      "cis",
+      "inspector",
+      "config",
+      "securityHub"
+    ]
+  },
+  "Test": "Globals",
+  "level": "info",
+  "msg": "Config:"
+}
+{
+  "Test": "Globals",
+  "level": "info",
+  "msg": "**************************Globals Initialized..."
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Security Tests Starting:  *****************************************"
+}
+{
+  "Test": "Exec",
+  "level": "info",
+  "msg": "execTests: started"
+}
+{
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Descr": "Generate securityHub Report",
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "cis",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "CredentialReport init..."
+}
+{
+  "Descr": "Generate Credential Report",
+  "Test": "CIS",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "inspector",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Descr": "Generate Inspector Init",
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Run..."
+}
+{
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Typet3.small ID: i-097d74749bc21f77c State: running InspectorTag: true"
+}
+{
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "EC2 included in run"
+}
+{
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Inspector ResGrp created"
+}
+{
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Inspector Resource Group created: arn:aws:inspector:us-east-1:329914591859:resourcegroup/0-3I4cCZUM"
+}
+{
+  "Target": {
+    "AssessmentTargetArn": "arn:aws:inspector:us-east-1:329914591859:target/0-IFUYtqFg"
+  },
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Inspector Asessment Target created"
+}
+{
+  "Rules": {
+    "NextToken": null,
+    "RulesPackageArns": [
+      "arn:aws:inspector:us-east-1:316112463485:rulespackage/0-PmNV0Tcd",
+      "arn:aws:inspector:us-east-1:316112463485:rulespackage/0-R01qwB5Q",
+      "arn:aws:inspector:us-east-1:316112463485:rulespackage/0-gEjTy7T7",
+      "arn:aws:inspector:us-east-1:316112463485:rulespackage/0-rExsr2X8"
+    ]
+  },
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "ListRules"
+}
+{
+  "Assess Template": {
+    "AssessmentTemplateArn": "arn:aws:inspector:us-east-1:329914591859:target/0-IFUYtqFg/template/0-zE21hx41"
+  },
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Asessment Template"
+}
+{
+  "Run": {
+    "AssessmentRunArn": "arn:aws:inspector:us-east-1:329914591859:target/0-IFUYtqFg/template/0-zE21hx41/run/0-QR8nrZBN"
+  },
+  "Test": "Inspector",
+  "level": "info",
+  "msg": "Asessment Run started"
+}

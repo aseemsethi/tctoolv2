@@ -82,10 +82,8 @@ func sendEmail(globals *globals.TcGlobals) {
 		return
 	}
 
-	//fmt.Println("Email Sent to address: " + config.Email.Recv)
 	mLog.WithFields(logrus.Fields{
 		"Test": "Init"}).Info("Email sent:", config.Email.Recv)
-	//fmt.Println(result)
 }
 
 // Call with tctool <region> <accountid>
