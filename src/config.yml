@@ -13,6 +13,6 @@ email:
 # Enumerate Test Cases that need to be run
 tests:
   - "cis"
-  - "inspector"
+#  - "inspector"
   - "config"
   - "securityHub"

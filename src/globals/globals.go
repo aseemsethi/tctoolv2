@@ -5,6 +5,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/configservice"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
 	"github.com/sirupsen/logrus"
@@ -13,16 +14,19 @@ import (
 )
 
 type TcGlobals struct {
-	Name       string
-	Log        *logrus.Logger
-	Sess       *session.Session
-	GRegion    string
-	GArn       string
-	GConf      aws.Config
-	Config     TcConfig
-	IamSvc     iamiface.IAMAPI
-	Cred       string
-	CredReport credentialReport
+	Name                    string
+	Log                     *logrus.Logger
+	Sess                    *session.Session
+	GRegion                 string
+	GArn                    string
+	GConf                   aws.Config
+	Config                  TcConfig
+	IamSvc                  iamiface.IAMAPI
+	ConfigSvc               *configservice.ConfigService
+	ConfigRules             []*configservice.ConfigRule
+	ComplianceDetailsResult []*configservice.EvaluationResult
+	Cred                    string
+	CredReport              credentialReport
 }
 
 type TcConfig struct {

@@ -20,12 +20,13 @@ var cisTestCases = []globals.Tcs{
 }
 
 var inspectorTestCases = []globals.Tcs{
-	{"Inspector", "Generate Inspector Init", InitInspector},
-	{"Inspector", "Generate Inspector Run", RunInspector},
+	{"Inspector", "Inspector Init", InitInspector},
+	{"Inspector", "Inspector Run", RunInspector},
 }
 
 var configTestCases = []globals.Tcs{
-	{"config", "Generate Config Report", cis11},
+	{"config", "Config Init", InitConfig},
+	{"config", "Config Run", RunConfig},
 }
 
 var securityHubTestCases = []globals.Tcs{
@@ -54,7 +55,7 @@ func ExecTests(globals *globals.TcGlobals) {
 	for k, tests := range globalTests { // Tests in Code
 		if Contains(globals.Config.EnabledTests, k) { // Tests in Config.yml
 			mLog.WithFields(logrus.Fields{
-				"Test": k}).Info("Starting Tests *****************************************")
+				"Test": k}).Info("Starting *****************************************", k)
 			for _, elem := range tests {
 				if _, err := elem.Run(globals); err != nil {
 					mLog.WithFields(logrus.Fields{
