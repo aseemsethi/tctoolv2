@@ -20,7 +20,8 @@ var cisTestCases = []globals.Tcs{
 }
 
 var inspectorTestCases = []globals.Tcs{
-	{"Inspector", "Generate Inspector Report", cis11},
+	{"Inspector", "Generate Inspector Init", InitInspector},
+	{"Inspector", "Generate Inspector Run", RunInspector},
 }
 
 var configTestCases = []globals.Tcs{
