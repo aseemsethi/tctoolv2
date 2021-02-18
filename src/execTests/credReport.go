@@ -85,8 +85,8 @@ start:
 
 		//fmt.Println("\n", string(resp.Content))
 		globals.Globals.Cred = string(resp.Content)
-		iLog.WithFields(logrus.Fields{
-			"Test": "CIS"}).Info("Credential Rept generated")
+		//iLog.WithFields(logrus.Fields{
+		//	"Test": "CIS"}).Info("Credential Rept generated")
 		return true, nil
 	} else {
 		iLog.WithFields(logrus.Fields{

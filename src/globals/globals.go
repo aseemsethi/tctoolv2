@@ -100,7 +100,7 @@ func (tcg *TcGlobals) Initialize() bool {
 	parseYaml(tcg)
 
 	tcg.GRegion = tcg.Config.Target.Region
-	tcg.GArn = fmt.Sprintf("arn:aws:iam::%v:role/KVAccess", tcg.Config.Target.Id)
+	tcg.GArn = fmt.Sprintf("arn:aws:iam::%v:role/tctool", tcg.Config.Target.Id)
 	tcg.GConf = aws.Config{Region: aws.String(tcg.GRegion)}
 	tcg.GConf.Credentials = stscreds.NewCredentials(tcg.Sess, tcg.GArn, func(p *stscreds.AssumeRoleProvider) {})
 

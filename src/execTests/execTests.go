@@ -30,10 +30,12 @@ func ExecTests(globals *globals.TcGlobals) {
 	mLog.WithFields(logrus.Fields{
 		"Test": "Exec"}).Info("execTests: started")
 	for _, elem := range tcCases {
-		if result, err := elem.Run(globals); err != nil {
-			fmt.Print("Failed Test", result)
+		if _, err := elem.Run(globals); err != nil {
+			mLog.WithFields(logrus.Fields{
+				"Test": elem.Id, "Descr": elem.Descr}).Info("Failed")
 		} else {
-			fmt.Print("Passed Test", result)
+			mLog.WithFields(logrus.Fields{
+				"Test": elem.Id, "Descr": elem.Descr}).Info("Passed")
 		}
 	}
 }

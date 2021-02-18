@@ -41,7 +41,30 @@
 {
   "Test": "CIS",
   "level": "info",
-  "msg": "Credential Rept generated"
+  "msg": "Credential Rept Not generated"
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "GenerateCredentialReport Passed 2nd time"
+}
+{
+  "Descr": "Generate Credential Repo",
+  "Test": "CredentialsInit",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Descr": "Avoid Root Account",
+  "Test": "CIS1.1",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Descr": "Enable MFA for all Accounts",
+  "Test": "CIS1.2",
+  "level": "info",
+  "msg": "Failed"
 }
 {
   "Summary": {
