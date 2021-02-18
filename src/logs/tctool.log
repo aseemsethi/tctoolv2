@@ -9,10 +9,12 @@
       "Recv": "aseemsethi@yahoo.com",
       "Subject": "TcTool Test Results"
     },
-    "Database": {
-      "Username": "admin",
-      "Password": "super-pedro-1980"
-    }
+    "EnabledTests": [
+      "cis",
+      "inspector",
+      "config",
+      "securityHub"
+    ]
   },
   "Test": "Globals",
   "level": "info",
@@ -26,7 +28,7 @@
 {
   "Test": "Init",
   "level": "info",
-  "msg": "Security Tests Starting....................................................."
+  "msg": "Security Tests Starting:  *****************************************"
 }
 {
   "Test": "Exec",
@@ -34,37 +36,31 @@
   "msg": "execTests: started"
 }
 {
+  "Test": "cis",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
   "Test": "CIS",
   "level": "info",
   "msg": "CredentialReport init..."
 }
 {
+  "Descr": "Generate Credential Report",
   "Test": "CIS",
-  "level": "info",
-  "msg": "Credential Rept Not generated"
-}
-{
-  "Test": "CIS",
-  "level": "info",
-  "msg": "GenerateCredentialReport Passed 2nd time"
-}
-{
-  "Descr": "Generate Credential Repo",
-  "Test": "CredentialsInit",
   "level": "info",
   "msg": "Passed"
 }
 {
-  "Descr": "Avoid Root Account",
-  "Test": "CIS1.1",
+  "Test": "inspector",
   "level": "info",
-  "msg": "Passed"
+  "msg": "Starting Tests *****************************************"
 }
 {
-  "Descr": "Enable MFA for all Accounts",
-  "Test": "CIS1.2",
+  "Descr": "Generate Inspector Report",
+  "Test": "Inspector",
   "level": "info",
-  "msg": "Failed"
+  "msg": "Passed"
 }
 {
   "Summary": {

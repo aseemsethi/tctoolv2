@@ -35,10 +35,7 @@ type TcConfig struct {
 		Recv    string `yaml:"recv"`
 		Subject string `yaml:"subject"`
 	}
-	Database struct {
-		Username string `yaml:"user"`
-		Password string `yaml:"pass"`
-	} `yaml:"database"`
+	EnabledTests []string `yaml:"tests"`
 }
 
 var Globals = TcGlobals{Name: "Test Globals"}

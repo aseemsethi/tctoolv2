@@ -9,7 +9,9 @@ email:
   sender: "aseemsethi@yahoo.com"
   subject: "TcTool Test Results"
 
-# Database credentials
-database:
-  user: "admin"
-  pass: "super-pedro-1980"
+# Enumerate Test Cases that need to be run
+tests:
+  - "cis"
+  - "inspector"
+  - "config"
+  - "securityHub"

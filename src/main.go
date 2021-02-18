@@ -95,7 +95,7 @@ func main() {
 	globals.Globals.Initialize()
 	mLog = globals.Globals.Log
 	mLog.WithFields(logrus.Fields{
-		"Test": "Init"}).Info("Security Tests Starting.....................................................")
+		"Test": "Init"}).Info("Security Tests Starting:  *****************************************")
 	execTests.ExecTests(&globals.Globals)
 	//sendEmail(&globals.Globals)
 	mLog.WithFields(logrus.Fields{
