@@ -97,7 +97,9 @@ func main() {
 	mLog.WithFields(logrus.Fields{
 		"Test": "Init"}).Info("Security Tests Starting:  *****************************************")
 	execTests.ExecTests(&globals.Globals)
-	//sendEmail(&globals.Globals)
+	if globals.Globals.Config.Email.SendEmail == true {
+		sendEmail(&globals.Globals)
+	}
 	mLog.WithFields(logrus.Fields{
 		"Test": "Tests", "Summary": globals.SevCount}).Info("Summary")
 }

@@ -31,9 +31,10 @@ type TcConfig struct {
 		Id     string `yaml:"id"`
 	} `yaml:"target"`
 	Email struct {
-		Sender  string `yaml:"sender"`
-		Recv    string `yaml:"recv"`
-		Subject string `yaml:"subject"`
+		Sender    string `yaml:"sender"`
+		Recv      string `yaml:"recv"`
+		Subject   string `yaml:"subject"`
+		SendEmail bool   `yaml:"sendemail"`
 	}
 	EnabledTests []string `yaml:"tests"`
 }

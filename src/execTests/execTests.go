@@ -9,8 +9,10 @@ import (
 
 var mLog *logrus.Logger
 var globalTests = map[string][]globals.Tcs{
-	"cis":       cisTestCases,
-	"inspector": inspectorTestCases,
+	"cis":         cisTestCases,
+	"inspector":   inspectorTestCases,
+	"config":      configTestCases,
+	"securityHub": securityHubTestCases,
 }
 
 var cisTestCases = []globals.Tcs{
@@ -19,6 +21,14 @@ var cisTestCases = []globals.Tcs{
 
 var inspectorTestCases = []globals.Tcs{
 	{"Inspector", "Generate Inspector Report", cis11},
+}
+
+var configTestCases = []globals.Tcs{
+	{"config", "Generate Config Report", cis11},
+}
+
+var securityHubTestCases = []globals.Tcs{
+	{"securityHub", "Generate securityHub Report", cis11},
 }
 
 func cis11(g *globals.TcGlobals) (bool, error) {

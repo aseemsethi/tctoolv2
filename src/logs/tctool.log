@@ -7,7 +7,8 @@
     "Email": {
       "Sender": "aseemsethi@yahoo.com",
       "Recv": "aseemsethi@yahoo.com",
-      "Subject": "TcTool Test Results"
+      "Subject": "TcTool Test Results",
+      "SendEmail": true
     },
     "EnabledTests": [
       "cis",
@@ -63,8 +64,35 @@
   "msg": "Passed"
 }
 {
+  "Test": "config",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Descr": "Generate Config Report",
+  "Test": "config",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Starting Tests *****************************************"
+}
+{
+  "Descr": "Generate securityHub Report",
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Email sent:aseemsethi@yahoo.com"
+}
+{
   "Summary": {
-    "critical": 1,
+    "critical": 3,
     "high": 0,
     "info": 0,
     "low": 0,

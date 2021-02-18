@@ -8,6 +8,7 @@ email:
   recv: "aseemsethi@yahoo.com"
   sender: "aseemsethi@yahoo.com"
   subject: "TcTool Test Results"
+  sendemail: false
 
 # Enumerate Test Cases that need to be run
 tests:
