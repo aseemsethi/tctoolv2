@@ -8,6 +8,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/configservice"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
+	"github.com/aws/aws-sdk-go/service/securityhub"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 	"os"
@@ -21,11 +22,13 @@ type TcGlobals struct {
 	AllLogsFile    string
 	FailedLogsFile string
 
-	Sess                    *session.Session
-	GRegion                 string
-	GArn                    string
-	GConf                   aws.Config
+	Sess    *session.Session
+	GRegion string
+	GArn    string
+	GConf   aws.Config
+
 	Config                  TcConfig
+	SecurityHubSvc          *securityhub.SecurityHub
 	IamSvc                  iamiface.IAMAPI
 	ConfigSvc               *configservice.ConfigService
 	ConfigRules             []*configservice.ConfigRule

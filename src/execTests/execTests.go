@@ -7,7 +7,9 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-var mLog *logrus.Logger
+var iLog *logrus.Logger
+var fLog *logrus.Logger
+
 var globalTests = map[string][]globals.Tcs{
 	"cis":         cisTestCases,
 	"inspector":   inspectorTestCases,
@@ -30,7 +32,8 @@ var configTestCases = []globals.Tcs{
 }
 
 var securityHubTestCases = []globals.Tcs{
-	{"securityHub", "Generate securityHub Report", cis11},
+	{"securityHub", "Init SecurityHub", InitSecurityHub},
+	{"securityHub", "Run SecurityHub", RunSecurityHub},
 }
 
 func cis11(g *globals.TcGlobals) (bool, error) {
@@ -49,19 +52,21 @@ func Contains(a []string, x string) bool {
 }
 
 func ExecTests(globals *globals.TcGlobals) {
-	mLog = globals.Log
-	mLog.WithFields(logrus.Fields{
+	iLog = globals.Log
+	fLog = globals.FLog
+
+	iLog.WithFields(logrus.Fields{
 		"Test": "Exec"}).Info("execTests: started")
 	for k, tests := range globalTests { // Tests in Code
 		if Contains(globals.Config.EnabledTests, k) { // Tests in Config.yml
-			mLog.WithFields(logrus.Fields{
+			iLog.WithFields(logrus.Fields{
 				"Test": k}).Info("Starting *****************************************", k)
 			for _, elem := range tests {
 				if _, err := elem.Run(globals); err != nil {
-					mLog.WithFields(logrus.Fields{
+					iLog.WithFields(logrus.Fields{
 						"Test": elem.Id, "Descr": elem.Descr}).Info("Failed")
 				} else {
-					mLog.WithFields(logrus.Fields{
+					iLog.WithFields(logrus.Fields{
 						"Test": elem.Id, "Descr": elem.Descr}).Info("Passed")
 				}
 			}
