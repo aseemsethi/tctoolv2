@@ -1,13 +1,17 @@
 package globals
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/cloudtrail"
+	"github.com/aws/aws-sdk-go/service/cloudwatchlogs"
 	"github.com/aws/aws-sdk-go/service/configservice"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
+	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/securityhub"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
@@ -27,14 +31,25 @@ type TcGlobals struct {
 	GArn    string
 	GConf   aws.Config
 
-	Config                  TcConfig
-	SecurityHubSvc          *securityhub.SecurityHub
-	IamSvc                  iamiface.IAMAPI
+	Config         TcConfig
+	SecurityHubSvc *securityhub.SecurityHub
+	IamSvc         iamiface.IAMAPI
+	PwdPolicy      *iam.GetAccountPasswordPolicyOutput
+
+	// Config
 	ConfigSvc               *configservice.ConfigService
 	ConfigRules             []*configservice.ConfigRule
 	ComplianceDetailsResult []*configservice.EvaluationResult
 	Cred                    string
 	CredReport              credentialReport
+
+	// CloudTrail
+	CloudTrailSvc *cloudtrail.CloudTrail
+	S3Svc         *s3.S3
+
+	// CloudWatch
+	CloudWatchSvc *cloudwatchlogs.CloudWatchLogs
+	LogGroups     *cloudwatchlogs.DescribeLogGroupsOutput
 }
 
 type TcConfig struct {
@@ -49,6 +64,27 @@ type TcConfig struct {
 		SendEmail bool   `yaml:"sendemail"`
 	}
 	EnabledTests []string `yaml:"tests"`
+}
+
+// from https://github.com/aws/aws-sdk-go-v2/issues/225
+type Value string
+type Policy struct {
+	// 2012-10-17 or 2008-10-17 old policies, do NOT use this for new policies
+	Version    string       `json:"Version"`
+	Id         string       `json:"Id,omitempty"`
+	Statements []Statement1 `json:"Statement"`
+}
+
+type Statement1 struct {
+	Sid          string           `json:"Sid,omitempty"`          // statement ID, service specific
+	Effect       string           `json:"Effect"`                 // Allow or Deny
+	Principal    map[string]Value `json:"Principal,omitempty"`    // principal that is allowed or denied
+	NotPrincipal map[string]Value `json:"NotPrincipal,omitempty"` // exception to a list of principals
+	Action       Value            `json:"Action"`                 // allowed or denied action
+	NotAction    Value            `json:"NotAction,omitempty"`    // matches everything except
+	Resource     Value            `json:"Resource,omitempty"`     // object or objects that the statement covers
+	NotResource  Value            `json:"NotResource,omitempty"`  // matches everything except
+	Condition    json.RawMessage  `json:"Condition,omitempty"`    // conditions for when a policy is in effect
 }
 
 var Globals = TcGlobals{Name: "Test Globals"}
@@ -111,6 +147,31 @@ func initLogs(tcg *TcGlobals) {
 	tcg.FLog.SetOutput(fileF)
 	tcg.FLog.SetFormatter(&logrus.JSONFormatter{PrettyPrint: true, DisableTimestamp: true})
 	tcg.FLog.SetLevel(logrus.InfoLevel)
+}
+
+// TBD: Does not check for Principal: *, need to check S3 Policies manually
+// User JSON decoder in policyDecoder going forwaard
+// str is Jaon Policy formatted *string
+func CheckPolicyForAllowAll(str *string) bool {
+	var p Policy
+	var jsonData = []byte(*str)
+
+	//fmt.Println("Called with string: ", *str)
+	err := json.Unmarshal(jsonData, &p)
+	if err != nil {
+		//fmt.Println("CheckPolicyForAllowAll: unexpected error parsing policy", err)
+		Globals.Log.WithFields(logrus.Fields{
+			"Test": "Globals"}).Info("CheckPolicyForAllowAll: unexpected error parsing policy: ", err)
+		return false
+	}
+	//fmt.Printf("%+v", p)
+	for _, val := range p.Statements {
+		//fmt.Println("\nEffect/Allow: ", val.Effect, val.Principal)
+		if val.Effect == "Allow" && val.Principal["AWS"] == "*" {
+			return true
+		}
+	}
+	return false
 }
 
 func (tcg *TcGlobals) Initialize() bool {
