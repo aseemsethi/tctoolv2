@@ -1,11 +1,14 @@
 package execTests
 
 import (
-	//"fmt"
+	//"encoding/json"
+	"fmt"
 	"github.com/aseemsethi/tctoolv2/src/globals"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/securityhub"
+	//"github.com/jmoiron/jsonq"
 	"github.com/sirupsen/logrus"
+	//"strings"
 )
 
 type SecurityHub struct {
@@ -41,7 +44,24 @@ func listFindings(g *globals.TcGlobals) {
 		}
 		iLog.WithFields(logrus.Fields{"Test": "securityhub"}).Info("ListFindings passed")
 		for _, v := range list.Findings {
-			iLog.WithFields(logrus.Fields{"Test": "securityhub", "Findings": v}).Info("Findings")
+			// data := map[string]interface{}{}
+			// dec := json.NewDecoder(strings.NewReader(v.Compliance.Status))
+			// dec.Decode(&data)
+			// jq := jsonq.NewQuery(data)
+			// if jq.String("Findings", "Compliance", "Status") == "FAILED" {
+			// 	//if data["Findings"]["Compliance"]["Status"].(string) == "FAILED" {
+			// 	fmt.Println("v")
+			// }
+			if v == nil || v.Compliance == nil {
+				// True for Inspector results which we are showing separately anyways
+				continue
+			}
+			if *v.Compliance.Status == "FAILED" {
+				fmt.Println("Failed:", *v.Compliance.Status, ", Reason:", v.Compliance.StatusReasons, *v.Description, " Id::", v.Resources)
+				iLog.WithFields(logrus.Fields{"Test": "securityhub"}).Info(
+					"Failed:", *v.Compliance.Status, ", Reason:", v.Compliance.StatusReasons, *v.Description, " Id::", v.Resources)
+			}
+			//iLog.WithFields(logrus.Fields{"Test": "securityhub", "Failed Findings": v}).Info("Findings")
 			//fmt.Println("Findings: ", v)
 		}
 		if list.NextToken != nil {

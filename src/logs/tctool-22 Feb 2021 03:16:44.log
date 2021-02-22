@@ -1,0 +1,2319 @@
+{
+  "Config": {
+    "Target": {
+      "Region": "us-east-1",
+      "Id": "329914591859"
+    },
+    "Email": {
+      "Sender": "aseemsethi@yahoo.com",
+      "Recv": "aseemsethi@yahoo.com",
+      "Subject": "TcTool Test Results",
+      "SendEmail": false
+    },
+    "EnabledTests": [
+      "cis",
+      "config",
+      "securityHub"
+    ]
+  },
+  "Test": "Globals",
+  "level": "info",
+  "msg": "Config:"
+}
+{
+  "Test": "Globals",
+  "level": "info",
+  "msg": "**************************Globals Initialized..."
+}
+{
+  "Test": "Init",
+  "level": "info",
+  "msg": "Security Tests Starting:  *****************************************"
+}
+{
+  "Test": "Exec",
+  "level": "info",
+  "msg": "execTests: started"
+}
+{
+  "Test": "cis",
+  "level": "info",
+  "msg": "Starting *****************************************cis"
+}
+{
+  "Test": "CIS",
+  "level": "info",
+  "msg": "CredentialReport init..."
+}
+{
+  "Descr": "Generate Credential Report",
+  "Test": "CIS",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "config",
+  "level": "info",
+  "msg": "Starting *****************************************config"
+}
+{
+  "Test": "Config",
+  "level": "info",
+  "msg": "Enabled"
+}
+{
+  "Descr": "Config Init",
+  "Test": "config",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "Config",
+  "level": "info",
+  "msg": "ConfigTool Run..."
+}
+{
+  "Test": "Config",
+  "level": "info",
+  "msg": "Config Evaluation Results............................................"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T05:16:26.278Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "cloud-trail-cloud-watch-logs-enabled",
+          "ResourceId": "management-events",
+          "ResourceType": "AWS::CloudTrail::Trail"
+        },
+        "OrderingTimestamp": "2021-02-21T05:16:07.87Z"
+      },
+      "ResultRecordedTime": "2021-02-21T05:16:26.502Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T05:16:26.303Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "cloud-trail-log-file-validation-enabled",
+          "ResourceId": "management-events",
+          "ResourceType": "AWS::CloudTrail::Trail"
+        },
+        "OrderingTimestamp": "2021-02-21T05:16:07.87Z"
+      },
+      "ResultRecordedTime": "2021-02-21T05:16:26.555Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.089Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-access-keys-rotated-28315ef3",
+          "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:18:01.101Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.089Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-access-keys-rotated-28315ef3",
+          "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:18:01.096Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.165Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-cloud-trail-cloud-watch-logs-enabled-dbce4769",
+          "ResourceId": "management-events",
+          "ResourceType": "AWS::CloudTrail::Trail"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.411Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.187Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-cloud-trail-encryption-enabled-c3549882",
+          "ResourceId": "management-events",
+          "ResourceType": "AWS::CloudTrail::Trail"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.459Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.213Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-cloud-trail-log-file-validation-enabled-564d1512",
+          "ResourceId": "management-events",
+          "ResourceType": "AWS::CloudTrail::Trail"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.411Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.357Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ebs-snapshot-public-restorable-check-7803c077",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.007Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": "EBS Encryption by default is not enabled.",
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.381Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ec2-ebs-encryption-by-default-6de67673",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.866Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:45.982Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ec2-imdsv2-check-d0dfacd2",
+          "ResourceId": "i-097d74749bc21f77c",
+          "ResourceType": "AWS::EC2::Instance"
+        },
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
+      },
+      "ResultRecordedTime": "2021-02-18T15:21:46.183Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:46.008Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ec2-instance-managed-by-ssm-bb9485c0",
+          "ResourceId": "i-097d74749bc21f77c",
+          "ResourceType": "AWS::EC2::Instance"
+        },
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
+      },
+      "ResultRecordedTime": "2021-02-18T15:21:46.51Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-18T15:21:46.043Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ec2-instance-no-public-ip-3c98fce6",
+          "ResourceId": "i-097d74749bc21f77c",
+          "ResourceType": "AWS::EC2::Instance"
+        },
+        "OrderingTimestamp": "2021-02-18T15:21:30.291Z"
+      },
+      "ResultRecordedTime": "2021-02-18T15:21:46.213Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.406Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-ec2-stopped-instance-f1393a7c",
+          "ResourceId": "i-097d74749bc21f77c",
+          "ResourceType": "AWS::EC2::Instance"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.197Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:03.176Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-encrypted-volumes-4a7ec3d1",
+          "ResourceId": "vol-08e53c6c4d8c33bcc",
+          "ResourceType": "AWS::EC2::Volume"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:52.912Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:03.293Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": "Amazon GuardDuty is not configured.",
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.509Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-guardduty-enabled-centralized-a6204ffd",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.973Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:00.247Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-customer-policy-blocked-kms-actions-f61d8415",
+          "ResourceId": "ANPAUZUDRFJZ226RWW4UP",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.535Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:00.582Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.768Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-customer-policy-blocked-kms-actions-f61d8415",
+          "ResourceId": "ANPAUZUDRFJZ4WZWJ5ZGR",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.535Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:06.064Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-11T01:37:48.54Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-customer-policy-blocked-kms-actions-f61d8415",
+          "ResourceId": "ANPAUZUDRFJZS23XISHF4",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-11T01:37:31.755Z"
+      },
+      "ResultRecordedTime": "2021-02-11T01:37:48.824Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.269Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAJH76KHGTWERUUMPGE",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.405Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:00.468Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAJU6ULC67D63TIFAQE",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:00.601Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-12T04:55:15.176Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZ23PTLELB4",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-12T04:54:53.893Z"
+      },
+      "ResultRecordedTime": "2021-02-12T04:55:15.361Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:04.267Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZ7ZPVBYH7T",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:04.405Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:03.636Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZRHLWBZAM5",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:03.766Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:57.251Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZTZXPZASEK",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:57.382Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:58.803Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZUEED4FZWB",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:58.936Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-11T01:37:52.206Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZWKLYOBUTM",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-11T01:37:31.902Z"
+      },
+      "ResultRecordedTime": "2021-02-11T01:37:52.384Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:00.665Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZXXD32HZ2C",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:00.799Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:57.686Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZYDG2QVKPX",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:57.813Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-18T04:20:35.16Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZYRAMI6ADY",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-18T04:20:20.595Z"
+      },
+      "ResultRecordedTime": "2021-02-18T04:20:35.296Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:00.413Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AROAUZUDRFJZZRAQCXNR6",
+          "ResourceType": "AWS::IAM::Role"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.896Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:00.699Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:04.783Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:05.28Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.029Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:01.389Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-inline-policy-blocked-kms-actions-8937f62a",
+          "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:05.28Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:01.64Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.534Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-ensure-expires-cea8a4f7",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.68Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.721Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.56Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-lowercase-letter-check-9da6fb1c",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.686Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.735Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.595Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-minimum-length-check-5dedfc0a",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.715Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.764Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.623Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-number-check-bc6390e0",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.741Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.788Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.646Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-prevent-reuse-check-9b17e502",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.771Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.824Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.674Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-recommended-defaults-0d78d5bb",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.819Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.876Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.701Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-symbol-check-d5d0e449",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.823Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:30.87Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T20:16:28.911Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-password-policy-uppercase-letter-check-4428340e",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T20:16:29.037Z"
+      },
+      "ResultRecordedTime": "2021-02-21T20:16:29.082Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:00.271Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-policy-no-statements-with-admin-access-11b09674",
+          "ResourceId": "ANPAUZUDRFJZ226RWW4UP",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.535Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:00.464Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.781Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-policy-no-statements-with-admin-access-11b09674",
+          "ResourceId": "ANPAUZUDRFJZ4WZWJ5ZGR",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:00.535Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.985Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-11T01:37:48.564Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-policy-no-statements-with-admin-access-11b09674",
+          "ResourceId": "ANPAUZUDRFJZS23XISHF4",
+          "ResourceType": "AWS::IAM::Policy"
+        },
+        "OrderingTimestamp": "2021-02-11T01:37:31.755Z"
+      },
+      "ResultRecordedTime": "2021-02-11T01:37:48.777Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.722Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-root-access-key-check-79c2a823",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.237Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.747Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-support-policy-in-use-74d00031",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.237Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:04.799Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-user-no-policies-check-dd831501",
+          "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:05.28Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:04.979Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:01.402Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-user-no-policies-check-dd831501",
+          "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-09T04:55:05.28Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:01.553Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.769Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-user-unused-credentials-check-a58b7432",
+          "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:17:33.39Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.769Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-iam-user-unused-credentials-check-a58b7432",
+          "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:17:33.384Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.793Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-mfa-enabled-for-iam-console-access-e68a4113",
+          "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:17:35.24Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.793Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-mfa-enabled-for-iam-console-access-e68a4113",
+          "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+          "ResourceType": "AWS::IAM::User"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:17:35.245Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.82Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-multi-region-cloud-trail-enabled-4c9f0e7e",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.059Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:58.489Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-restricted-rdp-85c371e3",
+          "ResourceId": "sg-0ae9789245597f65f",
+          "ResourceType": "AWS::EC2::SecurityGroup"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.81Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:58.624Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:07.604Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-restricted-rdp-85c371e3",
+          "ResourceId": "sg-309ab306",
+          "ResourceType": "AWS::EC2::SecurityGroup"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.81Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:07.727Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:58.524Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-restricted-ssh-2c556d17",
+          "ResourceId": "sg-0ae9789245597f65f",
+          "ResourceType": "AWS::EC2::SecurityGroup"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.81Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:58.688Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:07.621Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-restricted-ssh-2c556d17",
+          "ResourceId": "sg-309ab306",
+          "ResourceType": "AWS::EC2::SecurityGroup"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.81Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:07.737Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.85Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-root-account-hardware-mfa-enabled-efdca72c",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.967Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.071Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.876Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-root-account-mfa-enabled-7347b7c5",
+          "ResourceId": "329914591859",
+          "ResourceType": "AWS::::Account"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:30.978Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.107Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:04.99Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-blacklisted-actions-prohibited-5e0d752a",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:52.87Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.256Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:02.311Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-blacklisted-actions-prohibited-5e0d752a",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.178Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:02.569Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.007Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-logging-enabled-5a4b7256",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:52.87Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.143Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:02.343Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-logging-enabled-5a4b7256",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.178Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:02.49Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.905Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-public-read-prohibited-41b274ca",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.153Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.905Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-public-read-prohibited-41b274ca",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.159Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.933Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-public-write-prohibited-9dff8296",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.206Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.933Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-public-write-prohibited-9dff8296",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.212Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.058Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-server-side-encryption-enabled-771168e9",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:52.87Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.354Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:02.458Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-server-side-encryption-enabled-771168e9",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.178Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:02.717Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:05.078Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-ssl-requests-only-877f0e8f",
+          "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:52.87Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:05.475Z",
+      "ResultToken": null
+    },
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:02.482Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-s3-bucket-ssl-requests-only-877f0e8f",
+          "ResourceId": "config-bucket-329914591859",
+          "ResourceType": "AWS::S3::Bucket"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.178Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:02.707Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": "This Amazon VPC doesn't use a VPC endpoint for service com.amazonaws.us-east-1.ec2.",
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-22T01:16:17.469Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-service-vpc-endpoint-enabled-45628324",
+          "ResourceId": "vpc-98845ee5",
+          "ResourceType": "AWS::EC2::VPC"
+        },
+        "OrderingTimestamp": "2021-02-22T01:16:07.143Z"
+      },
+      "ResultRecordedTime": "2021-02-22T01:16:21.557Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": "Amazon SNS Topic is not encrypted with KMS",
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:20:59.754Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-sns-encrypted-kms-54f38105",
+          "ResourceId": "arn:aws:sns:us-east-1:329914591859:Billing_CloudWatch_Alarms_Topic",
+          "ResourceType": "AWS::SNS::Topic"
+        },
+        "OrderingTimestamp": "2021-02-09T05:14:53.361Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:20:59.91Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-09T09:21:07.636Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-vpc-default-security-group-closed-43c55715",
+          "ResourceId": "sg-309ab306",
+          "ResourceType": "AWS::EC2::SecurityGroup"
+        },
+        "OrderingTimestamp": "2021-02-09T04:54:53.81Z"
+      },
+      "ResultRecordedTime": "2021-02-09T09:21:07.82Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": [
+    {
+      "Annotation": null,
+      "ComplianceType": "NON_COMPLIANT",
+      "ConfigRuleInvokedTime": "2021-02-21T22:16:30.979Z",
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "securityhub-vpc-flow-logs-enabled-1678f95d",
+          "ResourceId": "vpc-98845ee5",
+          "ResourceType": "AWS::EC2::VPC"
+        },
+        "OrderingTimestamp": "2021-02-21T22:16:07.144Z"
+      },
+      "ResultRecordedTime": "2021-02-21T22:16:31.274Z",
+      "ResultToken": null
+    }
+  ],
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Descr": "Config Run",
+  "Test": "config",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Starting *****************************************securityHub"
+}
+{
+  "Test": "SecurityHub",
+  "level": "info",
+  "msg": "Not Enabled: ResourceConflictException: Account is already subscribed to Security Hub\n{\n  RespMetadata: {\n    StatusCode: 409,\n    RequestID: \"5b4511d0-d6c8-400f-8564-5361109d9b2b\"\n  },\n  Code_: \"ResourceConflictException\",\n  Message_: \"Account is already subscribed to Security Hub\"\n}"
+}
+{
+  "Test": "SecurityHub",
+  "level": "info",
+  "msg": "Enabled"
+}
+{
+  "Descr": "Init SecurityHub",
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Test": "SecurityHub",
+  "level": "info",
+  "msg": "SecurityHub Run..."
+}
+{
+  "Subscriptions": [
+    {
+      "StandardsArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
+      "StandardsInput": {},
+      "StandardsStatus": "READY",
+      "StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:329914591859:subscription/cis-aws-foundations-benchmark/v/1.2.0"
+    },
+    {
+      "StandardsArn": "arn:aws:securityhub:us-east-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+      "StandardsInput": {},
+      "StandardsStatus": "READY",
+      "StandardsSubscriptionArn": "arn:aws:securityhub:us-east-1:329914591859:subscription/aws-foundational-security-best-practices/v/1.0.0"
+    }
+  ],
+  "Test": "SecurityHub",
+  "level": "info",
+  "msg": "GetEnabledStandards"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "ListFindings passed"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether your IAM users have passwords or active access keys that were not used within the previous 90 days. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]AWS IAM users can access AWS resources using different types of credentials, such as passwords or access keys. It is recommended that all credentials that have been unused in 90 or greater days be removed or deactivated. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]The root account is the most privileged user in an AWS account. AWS Access Keys provide programmatic access to a given AWS account. It is recommended that all access keys associated with the root account be removed. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the root user access key is available. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. After you've created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs. It is recommended that VPC Flow Logs be enabled for packet \"Rejects\" for VPCs. Id::[{\n  Details: {\n    AwsEc2Vpc: {\n      CidrBlockAssociationSet: [{\n          AssociationId: \"vpc-cidr-assoc-c2ca7dad\",\n          CidrBlock: \"172.31.0.0/16\",\n          CidrBlockState: \"associated\"\n        }],\n      DhcpOptionsId: \"dopt-cafabeb0\",\n      State: \"available\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Vpc\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether Amazon Virtual Private Cloud flow logs are found and enabled for Amazon VPCs. The traffic type is set to 'Reject'. Id::[{\n  Details: {\n    AwsEc2Vpc: {\n      CidrBlockAssociationSet: [{\n          AssociationId: \"vpc-cidr-assoc-c2ca7dad\",\n          CidrBlock: \"172.31.0.0/16\",\n          CidrBlockState: \"associated\"\n        }],\n      DhcpOptionsId: \"dopt-cafabeb0\",\n      State: \"available\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Vpc\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether AWS Multi-Factor Authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether AWS Multi-Factor Authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AmazonEC2FullAccess\",\n          PolicyName: \"AmazonEC2FullAccess\"\n        }],\n      CreateDate: \"2020-11-30T10:28:50.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZZW6EXMFF5\",\n      UserName: \"coder\",\n      UserPolicyList: [{\n          PolicyName: \"LaunchInstanceWithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/coder\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Multi-Factor Authentication (MFA) adds an extra layer of protection on top of a user name and password. It is recommended that MFA be enabled for all accounts that have a console password. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Multi-Factor Authentication (MFA) adds an extra layer of protection on top of a user name and password. It is recommended that MFA be enabled for all accounts that have a console password. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AmazonEC2FullAccess\",\n          PolicyName: \"AmazonEC2FullAccess\"\n        }],\n      CreateDate: \"2020-11-30T10:28:50.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZZW6EXMFF5\",\n      UserName: \"coder\",\n      UserPolicyList: [{\n          PolicyName: \"LaunchInstanceWithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/coder\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one symbol. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Access keys consist of an access key ID and secret access key, which are used to sign programmatic requests that you make to AWS. It is recommended that all access keys be regularly rotated. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the active access keys are rotated within 90 days. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]The root account is the most privileged user in an AWS account. MFA adds an extra layer of protection on top of a user name and password. With MFA enabled, when a user signs in to an AWS website, they will be prompted for their user name and password as well as for an authentication code from their AWS MFA device. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one number. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the account password policy for IAM users uses the following recommended configurations: RequireUppercaseCharacters: true, RequireLowercaseCharacters: true, RequireSymbols: true, RequireNumbers: true, MinimumPasswordLength: 8. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether your AWS account is enabled to use hardware multi-factor authentication (MFA) device to sign in with root credentials. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]The root account is the most privileged user in an AWS account. MFA adds an extra layer of protection on top of a user name and password. With MFA enabled, when a user signs in to an AWS website, they will be prompted for their user name and password as well as for an authentication code from their AWS MFA device. For Level 2, it is recommended that the root account be protected with a hardware MFA. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]AWS provides a support center that can be used for incident notification and response, as well as technical support and customer services. Create an IAM Role to allow authorized users to manage incidents with AWS Support. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]IAM password policies can prevent the reuse of a given password by the same user. It is recommended that the password policy prevent the reuse of passwords. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one lowercase letter. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether AWS CloudTrail is configured to use the server side encryption (SSE) AWS Key Management Service (AWS KMS) customer master key (CMK) encryption. The check will pass if the KmsKeyId is defined. Id::[{\n  Details: {\n    AwsCloudTrailTrail: {\n      CloudWatchLogsLogGroupArn: \"arn:aws:logs:us-east-1:329914591859:log-group:aws-cloudtrail-mgmtevents-329914591859-4daa8320:*\",\n      CloudWatchLogsRoleArn: \"arn:aws:iam::329914591859:role/service-role/CloudTrail-Watch\",\n      HasCustomEventSelectors: false,\n      HomeRegion: \"us-east-1\",\n      IncludeGlobalServiceEvents: true,\n      IsMultiRegionTrail: true,\n      IsOrganizationTrail: false,\n      LogFileValidationEnabled: true,\n      Name: \"management-events\",\n      S3BucketName: \"aws-cloudtrail-logs-329914591859-9caee3eb\"\n    }\n  },\n  Id: \"arn:aws:cloudtrail:us-east-1:329914591859:trail/management-events\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsCloudTrailTrail\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]AWS Key Management Service (KMS) is a managed service that helps create and control the encryption keys used to encrypt account data, and uses Hardware Security Modules (HSMs) to protect the security of encryption keys. CloudTrail logs can be configured to leverage server side encryption (SSE) and KMS customer created master keys (CMK) to further protect CloudTrail logs. It is recommended that CloudTrail be configured to use SSE-KMS. Id::[{\n  Details: {\n    AwsCloudTrailTrail: {\n      CloudWatchLogsLogGroupArn: \"arn:aws:logs:us-east-1:329914591859:log-group:aws-cloudtrail-mgmtevents-329914591859-4daa8320:*\",\n      CloudWatchLogsRoleArn: \"arn:aws:iam::329914591859:role/service-role/CloudTrail-Watch\",\n      HasCustomEventSelectors: false,\n      HomeRegion: \"us-east-1\",\n      IncludeGlobalServiceEvents: true,\n      IsMultiRegionTrail: true,\n      IsOrganizationTrail: false,\n      LogFileValidationEnabled: true,\n      Name: \"management-events\",\n      S3BucketName: \"aws-cloudtrail-logs-329914591859-9caee3eb\"\n    }\n  },\n  Id: \"arn:aws:cloudtrail:us-east-1:329914591859:trail/management-events\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsCloudTrailTrail\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]IAM password policies can require passwords to be rotated or expired after a given number of days. It is recommended that the password policy expire passwords after 90 days or less. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether Amazon GuardDuty is enabled in your AWS account and region. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]The \"root\" account has unrestricted access to all resources in the AWS account. It is highly recommended that the use of this account be avoided. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]S3 Bucket Access Logging generates a log that contains access records for each request made to your S3 bucket. An access log record contains details about the request, such as the request type, the resources specified in the request worked, and the time and date the request was processed. It is recommended that bucket access logging be enabled on the CloudTrail S3 bucket. Id::[{\n  Id: \"arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsS3Bucket\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for detecting changes to CloudTrail's configurations. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "ListFindings passed"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for customer created CMKs which have changed state to disabled or scheduled deletion. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for detecting changes to CloudTrail's configurations. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established changes made to Identity and Access Management (IAM) policies. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for console logins that are not protected by multi-factor authentication (MFA). Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Network gateways are required to send/receive traffic to a destination outside of a VPC. It is recommended that a metric filter and alarm be established for changes to network gateways. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. NACLs are used as a stateless packet filter to control ingress and egress traffic for subnets within a VPC. It is recommended that a metric filter and alarm be established for changes made to NACLs. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid metric filter associated with multi-region CloudTrail\",\n  ReasonCode: \"CLOUDTRAIL_METRIC_FILTER_NOT_VALID\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Security Groups are a stateful packet filter that controls ingress and egress traffic within a VPC. It is recommended that a metric filter and alarm be established changes to Security Groups. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"No valid CloudWatchAlarm on metric filter\",\n  ReasonCode: \"CLOUDWATCH_ALARMS_NOT_PRESENT\"\n}]Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for unauthorized API calls. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether a service endpoint for Amazon EC2 is created for each VPC. The control fails if a VPC does not have a VPC endpoint created for the Amazon EC2 service. Id::[{\n  Details: {\n    AwsEc2Vpc: {\n      CidrBlockAssociationSet: [{\n          AssociationId: \"vpc-cidr-assoc-c2ca7dad\",\n          CidrBlock: \"172.31.0.0/16\",\n          CidrBlockState: \"associated\"\n        }],\n      DhcpOptionsId: \"dopt-cafabeb0\",\n      State: \"available\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Vpc\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether your Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version is configured with Instance Metadata Service Version 2 (IMDSv2). The control passes if HttpTokens is set to required for IMDSv2. The control fails if HttpTokens is set to optional. Id::[{\n  Details: {\n    AwsEc2Instance: {\n      IamInstanceProfileArn: \"arn:aws:iam::329914591859:instance-profile/KVAccess\",\n      ImageId: \"ami-019705a23f0c9eabd\",\n      LaunchedAt: \"2021-02-18T13:55:58.000Z\",\n      SubnetId: \"subnet-3d04911c\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Instance\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the Amazon EC2 instances in your account are managed by AWS Systems Manager. Id::[{\n  Details: {\n    AwsEc2Instance: {\n      IamInstanceProfileArn: \"arn:aws:iam::329914591859:instance-profile/KVAccess\",\n      ImageId: \"ami-019705a23f0c9eabd\",\n      LaunchedAt: \"2021-02-18T13:55:58.000Z\",\n      SubnetId: \"subnet-3d04911c\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Instance\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether an Amazon SNS topic is encrypted at rest using AWS KMS. Id::[{\n  Id: \"arn:aws:sns:us-east-1:329914591859:Billing_CloudWatch_Alarms_Topic\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsSnsTopic\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks that your Amazon S3 bucket either has Amazon S3 default encryption enabled or that the S3 bucket policy explicitly denies put-object requests without server side encryption. Id::[{\n  Details: {\n    AwsS3Bucket: {\n      OwnerId: \"75878385412300b50a608c4540d0ccbe517b153412dfa855f59d4825dc09fd02\"\n    }\n  },\n  Id: \"arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsS3Bucket\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks that your Amazon S3 bucket either has Amazon S3 default encryption enabled or that the S3 bucket policy explicitly denies put-object requests without server side encryption. Id::[{\n  Details: {\n    AwsS3Bucket: {\n      OwnerId: \"75878385412300b50a608c4540d0ccbe517b153412dfa855f59d4825dc09fd02\"\n    }\n  },\n  Id: \"arn:aws:s3:::config-bucket-329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsS3Bucket\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether S3 buckets have policies that require requests to use Secure Socket Layer (SSL). Id::[{\n  Details: {\n    AwsS3Bucket: {\n      OwnerId: \"75878385412300b50a608c4540d0ccbe517b153412dfa855f59d4825dc09fd02\"\n    }\n  },\n  Id: \"arn:aws:s3:::config-bucket-329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsS3Bucket\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether S3 buckets have policies that require requests to use Secure Socket Layer (SSL). Id::[{\n  Details: {\n    AwsS3Bucket: {\n      OwnerId: \"75878385412300b50a608c4540d0ccbe517b153412dfa855f59d4825dc09fd02\"\n    }\n  },\n  Id: \"arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsS3Bucket\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks that the default security group of a VPC does not allow inbound or outbound traffic. Id::[{\n  Details: {\n    AwsEc2SecurityGroup: {\n      GroupId: \"sg-309ab306\",\n      GroupName: \"default\",\n      IpPermissions: [{\n          IpProtocol: \"-1\",\n          UserIdGroupPairs: [{\n              GroupId: \"sg-309ab306\",\n              UserId: \"329914591859\"\n            }]\n        }],\n      IpPermissionsEgress: [{\n          IpProtocol: \"-1\",\n          IpRanges: [{\n              CidrIp: \"0.0.0.0/0\"\n            }]\n        }],\n      OwnerId: \"329914591859\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:security-group/sg-309ab306\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2SecurityGroup\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]A VPC comes with a default security group whose initial settings deny all inbound traffic, allow all outbound traffic, and allow all traffic between instances assigned to the security group. If you don't specify a security group when you launch an instance, the instance is automatically assigned to this default security group. It is recommended that the default security group restrict all traffic. Id::[{\n  Details: {\n    AwsEc2SecurityGroup: {\n      GroupId: \"sg-309ab306\",\n      GroupName: \"default\",\n      IpPermissions: [{\n          IpProtocol: \"-1\",\n          UserIdGroupPairs: [{\n              GroupId: \"sg-309ab306\",\n              UserId: \"329914591859\"\n            }]\n        }],\n      IpPermissionsEgress: [{\n          IpProtocol: \"-1\",\n          IpRanges: [{\n              CidrIp: \"0.0.0.0/0\"\n            }]\n        }],\n      OwnerId: \"329914591859\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:security-group/sg-309ab306\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2SecurityGroup\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks that none of your IAM users have policies attached. Instead, IAM users must inherit permissions from IAM groups or roles. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks that none of your IAM users have policies attached. Instead, IAM users must inherit permissions from IAM groups or roles. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AmazonEC2FullAccess\",\n          PolicyName: \"AmazonEC2FullAccess\"\n        }],\n      CreateDate: \"2020-11-30T10:28:50.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZZW6EXMFF5\",\n      UserName: \"coder\",\n      UserPolicyList: [{\n          PolicyName: \"LaunchInstanceWithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/coder\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]By default, IAM users, groups, and roles have no access to AWS resources. IAM policies are the means by which privileges are granted to users, groups, or roles. It is recommended that IAM policies be applied directly to groups and roles but not users. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AmazonEC2FullAccess\",\n          PolicyName: \"AmazonEC2FullAccess\"\n        }],\n      CreateDate: \"2020-11-30T10:28:50.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZZW6EXMFF5\",\n      UserName: \"coder\",\n      UserPolicyList: [{\n          PolicyName: \"LaunchInstanceWithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/coder\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]By default, IAM users, groups, and roles have no access to AWS resources. IAM policies are the means by which privileges are granted to users, groups, or roles. It is recommended that IAM policies be applied directly to groups and roles but not users. Id::[{\n  Details: {\n    AwsIamUser: {\n      AttachedManagedPolicies: [{\n          PolicyArn: \"arn:aws:iam::aws:policy/AdministratorAccess\",\n          PolicyName: \"AdministratorAccess\"\n        }],\n      CreateDate: \"2020-11-12T16:18:59.000Z\",\n      Path: \"/\",\n      UserId: \"AIDAUZUDRFJZYJFCPQMAL\",\n      UserName: \"admin\",\n      UserPolicyList: [{\n          PolicyName: \"AllowIAMToCreateServiceRole\"\n        },{\n          PolicyName: \"AllowUsersLaunchEC2WithRole\"\n        }]\n    }\n  },\n  Id: \"arn:aws:iam::329914591859:user/admin\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsIamUser\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the EBS volumes that are in an attached state are encrypted. Id::[{\n  Details: {\n    AwsEc2Volume: {\n      Attachments: [{\n          AttachTime: \"2021-01-19T12:48:26.000Z\",\n          DeleteOnTermination: true,\n          InstanceId: \"i-097d74749bc21f77c\",\n          Status: \"attached\"\n        }],\n      CreateTime: \"2021-01-19T12:48:26.679Z\",\n      Encrypted: false,\n      Size: 20,\n      SnapshotId: \"snap-0ed93309dd1ed6231\",\n      Status: \"in-use\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:volume/vol-08e53c6c4d8c33bcc\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Volume\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether any EC2 instances have been stopped for more than the allowed number of days. An EC2 instance fails this check if it is stopped for longer than the maximum allowed time period, which by default is 30 days. Id::[{\n  Details: {\n    AwsEc2Instance: {\n      IamInstanceProfileArn: \"arn:aws:iam::329914591859:instance-profile/KVAccess\",\n      ImageId: \"ami-019705a23f0c9eabd\",\n      LaunchedAt: \"2021-02-08T11:43:43.000Z\",\n      SubnetId: \"subnet-3d04911c\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Instance\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This control checks whether EC2 instances have a public IP address. The control fails if the publicIp field is present in the EC2 instance configuration item. This control applies to IPv4 addresses only. Id::[{\n  Details: {\n    AwsEc2Instance: {\n      IamInstanceProfileArn: \"arn:aws:iam::329914591859:instance-profile/KVAccess\",\n      ImageId: \"ami-019705a23f0c9eabd\",\n      LaunchedAt: \"2021-02-18T13:55:58.000Z\",\n      SubnetId: \"subnet-3d04911c\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Instance\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "ListFindings passed"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[]This AWS control checks whether the Amazon EC2 instances in your account are managed by AWS Systems Manager. Id::[{\n  Details: {\n    AwsEc2Instance: {\n      IamInstanceProfileArn: \"arn:aws:iam::329914591859:instance-profile/KVAccess\",\n      ImageId: \"ami-019705a23f0c9eabd\",\n      LaunchedAt: \"2021-02-08T11:43:43.000Z\",\n      SubnetId: \"subnet-3d04911c\",\n      VpcId: \"vpc-98845ee5\"\n    }\n  },\n  Id: \"arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsEc2Instance\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "Failed:FAILED, Reason:[{\n  Description: \"The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.\",\n  ReasonCode: \"NOT_UPDATED_WITHIN_THREE_DAYS\"\n}]This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled. Id::[{\n  Id: \"AWS::::Account:329914591859\",\n  Partition: \"aws\",\n  Region: \"us-east-1\",\n  Type: \"AwsAccount\"\n}]"
+}
+{
+  "Test": "securityhub",
+  "level": "info",
+  "msg": "ListFindings passed"
+}
+{
+  "Descr": "Run SecurityHub",
+  "Test": "securityHub",
+  "level": "info",
+  "msg": "Passed"
+}
+{
+  "Summary": {
+    "critical": 0,
+    "high": 0,
+    "info": 0,
+    "low": 0,
+    "medium": 0
+  },
+  "Test": "Tests",
+  "level": "info",
+  "msg": "Summary"
+}

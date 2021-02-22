@@ -24,6 +24,7 @@ func InitConfig(g *globals.TcGlobals) (bool, error) {
 }
 
 func getComplianceDetails(g *globals.TcGlobals) {
+	iLog.WithFields(logrus.Fields{"Test": "Config"}).Info("Config Evaluation Results............................................")
 	for _, configRule := range g.ConfigRules {
 		nextToken := ""
 		for {
@@ -56,8 +57,7 @@ func getConfigRules(g *globals.TcGlobals) {
 		if err != nil {
 			iLog.WithFields(logrus.Fields{"Test": "Config"}).Info("Error in getConfigRules: ", err)
 		}
-		//fmt.Println("Rule: ", output.ConfigRules)
-		iLog.WithFields(logrus.Fields{"Test": "Config", "Rules": output.ConfigRules}).Info("getConfigRules")
+		//iLog.WithFields(logrus.Fields{"Test": "Config", "Rules": output.ConfigRules}).Info("getConfigRules")
 		g.ConfigRules = append(g.ConfigRules, output.ConfigRules...)
 
 		if output.NextToken == nil {
