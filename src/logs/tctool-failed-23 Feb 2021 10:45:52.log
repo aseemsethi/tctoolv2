@@ -1,0 +1,1337 @@
+{
+  "Test": "Config",
+  "level": "info",
+  "msg": "ConfigSvc Failed Cases ***********************************"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-access-keys-rotated-28315ef3",
+    "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-cloud-trail-encryption-enabled-c3549882",
+    "ResourceId": "management-events",
+    "ResourceType": "AWS::CloudTrail::Trail"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-ec2-ebs-encryption-by-default-6de67673",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-ec2-imdsv2-check-d0dfacd2",
+    "ResourceId": "i-097d74749bc21f77c",
+    "ResourceType": "AWS::EC2::Instance"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-ec2-instance-managed-by-ssm-bb9485c0",
+    "ResourceId": "i-097d74749bc21f77c",
+    "ResourceType": "AWS::EC2::Instance"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-encrypted-volumes-4a7ec3d1",
+    "ResourceId": "vol-08e53c6c4d8c33bcc",
+    "ResourceType": "AWS::EC2::Volume"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-guardduty-enabled-centralized-a6204ffd",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-ensure-expires-cea8a4f7",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-lowercase-letter-check-9da6fb1c",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-number-check-bc6390e0",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-prevent-reuse-check-9b17e502",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-recommended-defaults-0d78d5bb",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-password-policy-symbol-check-d5d0e449",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-root-access-key-check-79c2a823",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-support-policy-in-use-74d00031",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-user-no-policies-check-dd831501",
+    "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-user-no-policies-check-dd831501",
+    "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-iam-user-unused-credentials-check-a58b7432",
+    "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-mfa-enabled-for-iam-console-access-e68a4113",
+    "ResourceId": "AIDAUZUDRFJZYJFCPQMAL",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-mfa-enabled-for-iam-console-access-e68a4113",
+    "ResourceId": "AIDAUZUDRFJZZW6EXMFF5",
+    "ResourceType": "AWS::IAM::User"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-root-account-hardware-mfa-enabled-efdca72c",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-root-account-mfa-enabled-7347b7c5",
+    "ResourceId": "329914591859",
+    "ResourceType": "AWS::::Account"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-logging-enabled-5a4b7256",
+    "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-logging-enabled-5a4b7256",
+    "ResourceId": "config-bucket-329914591859",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-server-side-encryption-enabled-771168e9",
+    "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-server-side-encryption-enabled-771168e9",
+    "ResourceId": "config-bucket-329914591859",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-ssl-requests-only-877f0e8f",
+    "ResourceId": "aws-cloudtrail-logs-329914591859-9caee3eb",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-s3-bucket-ssl-requests-only-877f0e8f",
+    "ResourceId": "config-bucket-329914591859",
+    "ResourceType": "AWS::S3::Bucket"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-service-vpc-endpoint-enabled-45628324",
+    "ResourceId": "vpc-98845ee5",
+    "ResourceType": "AWS::EC2::VPC"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-sns-encrypted-kms-54f38105",
+    "ResourceId": "arn:aws:sns:us-east-1:329914591859:Billing_CloudWatch_Alarms_Topic",
+    "ResourceType": "AWS::SNS::Topic"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-vpc-default-security-group-closed-43c55715",
+    "ResourceId": "sg-309ab306",
+    "ResourceType": "AWS::EC2::SecurityGroup"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Eval Results": {
+    "ConfigRuleName": "securityhub-vpc-flow-logs-enabled-1678f95d",
+    "ResourceId": "vpc-98845ee5",
+    "ResourceType": "AWS::EC2::VPC"
+  },
+  "Test": "Config",
+  "level": "info",
+  "msg": "Compliance Results"
+}
+{
+  "Test": "SecurityHub",
+  "level": "info",
+  "msg": "SecurityHub Failed Cases ***********************************"
+}
+{
+  "Descr": "This control checks whether Amazon Virtual Private Cloud flow logs are found and enabled for Amazon VPCs. The traffic type is set to 'Reject'.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. After you've created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs. It is recommended that VPC Flow Logs be enabled for packet \"Rejects\" for VPCs.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "AWS provides a support center that can be used for incident notification and response, as well as technical support and customer services. Create an IAM Role to allow authorized users to manage incidents with AWS Support.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "IAM password policies can prevent the reuse of a given password by the same user. It is recommended that the password policy prevent the reuse of passwords.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether your IAM users have passwords or active access keys that were not used within the previous 90 days.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "AWS IAM users can access AWS resources using different types of credentials, such as passwords or access keys. It is recommended that all credentials that have been unused in 90 or greater days be removed or deactivated.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "IAM password policies can require passwords to be rotated or expired after a given number of days. It is recommended that the password policy expire passwords after 90 days or less.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "The root account is the most privileged user in an AWS account. MFA adds an extra layer of protection on top of a user name and password. With MFA enabled, when a user signs in to an AWS website, they will be prompted for their user name and password as well as for an authentication code from their AWS MFA device.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether Amazon GuardDuty is enabled in your AWS account and region.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one lowercase letter.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "The root account is the most privileged user in an AWS account. MFA adds an extra layer of protection on top of a user name and password. With MFA enabled, when a user signs in to an AWS website, they will be prompted for their user name and password as well as for an authentication code from their AWS MFA device. For Level 2, it is recommended that the root account be protected with a hardware MFA.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether your AWS account is enabled to use hardware multi-factor authentication (MFA) device to sign in with root credentials.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the active access keys are rotated within 90 days.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Access keys consist of an access key ID and secret access key, which are used to sign programmatic requests that you make to AWS. It is recommended that all access keys be regularly rotated.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the account password policy for IAM users uses the following recommended configurations: RequireUppercaseCharacters: true, RequireLowercaseCharacters: true, RequireSymbols: true, RequireNumbers: true, MinimumPasswordLength: 8.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one number.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Password policies are, in part, used to enforce password complexity requirements. IAM password policies can be used to ensure passwords are comprised of different character sets. It is recommended that the password policy require at least one symbol.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "The root account is the most privileged user in an AWS account. AWS Access Keys provide programmatic access to a given AWS account. It is recommended that all access keys associated with the root account be removed.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the root user access key is available.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether AWS CloudTrail is configured to use the server side encryption (SSE) AWS Key Management Service (AWS KMS) customer master key (CMK) encryption. The check will pass if the KmsKeyId is defined.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:cloudtrail:us-east-1:329914591859:trail/management-events",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "AWS Key Management Service (KMS) is a managed service that helps create and control the encryption keys used to encrypt account data, and uses Hardware Security Modules (HSMs) to protect the security of encryption keys. CloudTrail logs can be configured to leverage server side encryption (SSE) and KMS customer created master keys (CMK) to further protect CloudTrail logs. It is recommended that CloudTrail be configured to use SSE-KMS.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:cloudtrail:us-east-1:329914591859:trail/management-events",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for detecting changes to CloudTrail's configurations.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for customer created CMKs which have changed state to disabled or scheduled deletion.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for detecting changes to CloudTrail's configurations.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established changes made to Identity and Access Management (IAM) policies.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for console logins that are not protected by multi-factor authentication (MFA).",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Network gateways are required to send/receive traffic to a destination outside of a VPC. It is recommended that a metric filter and alarm be established for changes to network gateways.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. NACLs are used as a stateless packet filter to control ingress and egress traffic for subnets within a VPC. It is recommended that a metric filter and alarm be established for changes made to NACLs.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Security Groups are a stateful packet filter that controls ingress and egress traffic within a VPC. It is recommended that a metric filter and alarm be established changes to Security Groups.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for unauthorized API calls.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid CloudWatchAlarm on metric filter",
+      "ReasonCode": "CLOUDWATCH_ALARMS_NOT_PRESENT"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "S3 Bucket Access Logging generates a log that contains access records for each request made to your S3 bucket. An access log record contains details about the request, such as the request type, the resources specified in the request worked, and the time and date the request was processed. It is recommended that bucket access logging be enabled on the CloudTrail S3 bucket.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "The \"root\" account has unrestricted access to all resources in the AWS account. It is highly recommended that the use of this account be avoided.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "No valid metric filter associated with multi-region CloudTrail",
+      "ReasonCode": "CLOUDTRAIL_METRIC_FILTER_NOT_VALID"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether a service endpoint for Amazon EC2 is created for each VPC. The control fails if a VPC does not have a VPC endpoint created for the Amazon EC2 service.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:vpc/vpc-98845ee5",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether your Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version is configured with Instance Metadata Service Version 2 (IMDSv2). The control passes if HttpTokens is set to required for IMDSv2. The control fails if HttpTokens is set to optional.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the Amazon EC2 instances in your account are managed by AWS Systems Manager.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks that your Amazon S3 bucket either has Amazon S3 default encryption enabled or that the S3 bucket policy explicitly denies put-object requests without server side encryption.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks that your Amazon S3 bucket either has Amazon S3 default encryption enabled or that the S3 bucket policy explicitly denies put-object requests without server side encryption.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:s3:::config-bucket-329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether S3 buckets have policies that require requests to use Secure Socket Layer (SSL).",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:s3:::aws-cloudtrail-logs-329914591859-9caee3eb",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether S3 buckets have policies that require requests to use Secure Socket Layer (SSL).",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:s3:::config-bucket-329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether an Amazon SNS topic is encrypted at rest using AWS KMS.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:sns:us-east-1:329914591859:Billing_CloudWatch_Alarms_Topic",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks that the default security group of a VPC does not allow inbound or outbound traffic.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:security-group/sg-309ab306",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "A VPC comes with a default security group whose initial settings deny all inbound traffic, allow all outbound traffic, and allow all traffic between instances assigned to the security group. If you don't specify a security group when you launch an instance, the instance is automatically assigned to this default security group. It is recommended that the default security group restrict all traffic.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:security-group/sg-309ab306",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "By default, IAM users, groups, and roles have no access to AWS resources. IAM policies are the means by which privileges are granted to users, groups, or roles. It is recommended that IAM policies be applied directly to groups and roles but not users.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/coder",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "By default, IAM users, groups, and roles have no access to AWS resources. IAM policies are the means by which privileges are granted to users, groups, or roles. It is recommended that IAM policies be applied directly to groups and roles but not users.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks that none of your IAM users have policies attached. Instead, IAM users must inherit permissions from IAM groups or roles.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks that none of your IAM users have policies attached. Instead, IAM users must inherit permissions from IAM groups or roles.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/coder",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Multi-Factor Authentication (MFA) adds an extra layer of protection on top of a user name and password. It is recommended that MFA be enabled for all accounts that have a console password.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "Multi-Factor Authentication (MFA) adds an extra layer of protection on top of a user name and password. It is recommended that MFA be enabled for all accounts that have a console password.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/coder",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether AWS Multi-Factor Authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/admin",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether AWS Multi-Factor Authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:iam::329914591859:user/coder",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the EBS volumes that are in an attached state are encrypted.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:volume/vol-08e53c6c4d8c33bcc",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether any EC2 instances have been stopped for more than the allowed number of days. An EC2 instance fails this check if it is stopped for longer than the maximum allowed time period, which by default is 30 days.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether EC2 instances have a public IP address. The control fails if the publicIp field is present in the EC2 instance configuration item. This control applies to IPv4 addresses only.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This AWS control checks whether the Amazon EC2 instances in your account are managed by AWS Systems Manager.",
+  "Failed": "FAILED",
+  "Reason": null,
+  "Test": "securityhub",
+  "id": "arn:aws:ec2:us-east-1:329914591859:instance/i-097d74749bc21f77c",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}
+{
+  "Descr": "This control checks whether Amazon Elastic Block Store (EBS) encryption is enabled by default. The control fails if EBS default encryption is not enabled.",
+  "Failed": "FAILED",
+  "Reason": [
+    {
+      "Description": "The finding is in an ARCHIVED state because the finding was generated by a security check and it hasn't been updated in 3 days. This could be due to the resource being deleted or the control being disabled.",
+      "ReasonCode": "NOT_UPDATED_WITHIN_THREE_DAYS"
+    }
+  ],
+  "Test": "securityhub",
+  "id": "AWS::::Account:329914591859",
+  "level": "info",
+  "msg": "SecurityHub Failed Test Case"
+}

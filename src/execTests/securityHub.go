@@ -2,7 +2,7 @@ package execTests
 
 import (
 	//"encoding/json"
-	"fmt"
+	//"fmt"
 	"github.com/aseemsethi/tctoolv2/src/globals"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/securityhub"
@@ -44,25 +44,18 @@ func listFindings(g *globals.TcGlobals) {
 		}
 		iLog.WithFields(logrus.Fields{"Test": "securityhub"}).Info("ListFindings passed")
 		for _, v := range list.Findings {
-			// data := map[string]interface{}{}
-			// dec := json.NewDecoder(strings.NewReader(v.Compliance.Status))
-			// dec.Decode(&data)
-			// jq := jsonq.NewQuery(data)
-			// if jq.String("Findings", "Compliance", "Status") == "FAILED" {
-			// 	//if data["Findings"]["Compliance"]["Status"].(string) == "FAILED" {
-			// 	fmt.Println("v")
-			// }
 			if v == nil || v.Compliance == nil {
 				// True for Inspector results which we are showing separately anyways
 				continue
 			}
 			if *v.Compliance.Status == "FAILED" {
-				fmt.Println("Failed:", *v.Compliance.Status, ", Reason:", v.Compliance.StatusReasons, *v.Description, " Id::", v.Resources)
-				iLog.WithFields(logrus.Fields{"Test": "securityhub"}).Info(
-					"Failed:", *v.Compliance.Status, ", Reason:", v.Compliance.StatusReasons, *v.Description, " Id::", v.Resources)
+				//fmt.Println("Failed:", *v.Compliance.Status, ", Reason:", v.Compliance.StatusReasons, *v.Description, " Id::", v.Resources)
+				//fmt.Println("Failed: ", *v.Resources[0].Id)
+				g.FLog.WithFields(logrus.Fields{"Test": "securityhub",
+					"Failed": *v.Compliance.Status, "Reason": v.Compliance.StatusReasons, "id": *v.Resources[0].Id,
+					"Descr": *v.Description}).Info("SecurityHub Failed Test Case")
 			}
-			//iLog.WithFields(logrus.Fields{"Test": "securityhub", "Failed Findings": v}).Info("Findings")
-			//fmt.Println("Findings: ", v)
+			iLog.WithFields(logrus.Fields{"Test": "securityhub", "Failed Findings": v}).Info("Findings")
 		}
 		if list.NextToken != nil {
 			nextToken = list.NextToken
@@ -75,6 +68,7 @@ func listFindings(g *globals.TcGlobals) {
 func RunSecurityHub(g *globals.TcGlobals) (bool, error) {
 	iLog.WithFields(logrus.Fields{
 		"Test": "SecurityHub"}).Info("SecurityHub Run...")
+	g.FLog.WithFields(logrus.Fields{"Test": "SecurityHub"}).Info("SecurityHub Failed Cases ***********************************")
 	input := &securityhub.GetEnabledStandardsInput{}
 	output, err := g.SecurityHubSvc.GetEnabledStandards(input)
 	if err != nil {

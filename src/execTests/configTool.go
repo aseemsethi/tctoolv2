@@ -38,7 +38,13 @@ func getComplianceDetails(g *globals.TcGlobals) {
 				continue
 			}
 			g.ComplianceDetailsResult = append(g.ComplianceDetailsResult, output.EvaluationResults...)
-			//fmt.Println("Results: ", output.EvaluationResults)
+			for _, r := range output.EvaluationResults {
+				if *r.ComplianceType == "NON_COMPLIANT" {
+					//fmt.Println("Config Svc Failed: ", r.EvaluationResultIdentifier.EvaluationResultQualifier)
+					g.FLog.WithFields(logrus.Fields{"Test": "Config",
+						"Eval Results": r.EvaluationResultIdentifier.EvaluationResultQualifier}).Info("Compliance Results")
+				}
+			}
 			iLog.WithFields(logrus.Fields{"Test": "Config", "Eval Results": output.EvaluationResults}).Info("Compliance Results")
 			if output.NextToken == nil {
 				break
@@ -70,6 +76,8 @@ func getConfigRules(g *globals.TcGlobals) {
 func RunConfig(g *globals.TcGlobals) (bool, error) {
 	iLog.WithFields(logrus.Fields{
 		"Test": "Config"}).Info("ConfigTool Run...")
+	g.FLog.WithFields(logrus.Fields{"Test": "Config"}).Info("ConfigSvc Failed Cases ***********************************")
+
 	getConfigRules(g)
 	getComplianceDetails(g)
 	return true, nil
